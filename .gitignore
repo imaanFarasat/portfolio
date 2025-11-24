@@ -1,0 +1,31 @@
+# Source files and old versions
+informative.html
+Yooperlite.html
+low-inventory.html
+
+# Internal tracking files
+portfolio_missing_items.json
+
+# Email Samples folder (source files)
+Email Samples/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
