@@ -1146,6 +1146,16 @@
                 
                 <!-- EMAIL PREVIEW GRID -->
                 <div class="email-preview-grid">
+                    <div class="email-preview-card" onclick="openEmail('post_purchase_upsell_email.html')">
+                        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S8a04ac479a3141718a802a4b4381e668e.jpg_960x960q75.jpg" alt="Post-Purchase Email" class="email-preview-card-image" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://ae-pic-a1.aliexpress-media.com/kf/S8a04ac479a3141718a802a4b4381e668e.jpg_960x960q75.jpg';">
+                        <div class="email-preview-card-info">
+                            <div class="email-preview-card-name">Post-Purchase Upsell</div>
+                            <div class="email-preview-card-type">Material Design</div>
+                            <div class="email-preview-card-description">Material Design email with elevation and shadows to showcase complementary products</div>
+                            <span class="email-preview-card-badge badge-material">Material Design</span>
+                        </div>
+                    </div>
+
                     <div class="email-preview-card" onclick="openEmail('customer_reactivation_email.html')">
                         <img src="https://en.love-onfriday.com/cdn/shop/files/DVN-BDY-ST-01-Siyah_1_460x.jpg?v=1761122174" alt="Customer Reactivation Email" class="email-preview-card-image" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://en.love-onfriday.com/cdn/shop/files/DVN-BDY-ST-01-Siyah_1_460x.jpg?v=1761122174';">
                         <div class="email-preview-card-info">
@@ -1193,16 +1203,6 @@
                             <div class="email-preview-card-type">Neumorphism</div>
                             <div class="email-preview-card-description">Soft UI design with neumorphism effects to remind customers of abandoned items</div>
                             <span class="email-preview-card-badge badge-neumorphism">Neumorphism</span>
-                        </div>
-                    </div>
-
-                    <div class="email-preview-card" onclick="openEmail('post_purchase_upsell_email.html')">
-                        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S8a04ac479a3141718a802a4b4381e668e.jpg_960x960q75.jpg" alt="Post-Purchase Email" class="email-preview-card-image" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://ae-pic-a1.aliexpress-media.com/kf/S8a04ac479a3141718a802a4b4381e668e.jpg_960x960q75.jpg';">
-                        <div class="email-preview-card-info">
-                            <div class="email-preview-card-name">Post-Purchase Upsell</div>
-                            <div class="email-preview-card-type">Material Design</div>
-                            <div class="email-preview-card-description">Material Design email with elevation and shadows to showcase complementary products</div>
-                            <span class="email-preview-card-badge badge-material">Material Design</span>
                         </div>
                     </div>
 
@@ -2072,13 +2072,71 @@
 
             <!-- ALL EMAILS SECTION -->
             <div class="email-list" id="all">
+                <div class="email-item" onclick="openEmail('post_purchase_upsell_email.html')">
+                    <div class="email-item-content">
+                        <div class="email-preview">
+                            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S8a04ac479a3141718a802a4b4381e668e.jpg_960x960q75.jpg" alt="Post-Purchase Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://ae-pic-a1.aliexpress-media.com/kf/S8a04ac479a3141718a802a4b4381e668e.jpg_960x960q75.jpg';">
+                        </div>
+                        <div class="email-info">
+                            <div class="email-number">01</div>
+                            <div class="email-name">POST-PURCHASE</div>
+                            <div class="email-type badge-material">MATERIAL DESIGN</div>
+                            <div class="email-description">
+                                Material Design email with elevation, shadows, and bold colors to showcase complementary products after purchase completion.
+                            </div>
+                            <div class="compatibility-badges">
+                                <span class="compatibility-label">Tested on:</span>
+                                <span class="client-badge">Gmail</span>
+                                <span class="client-badge">Outlook</span>
+                                <span class="client-badge">Apple Mail</span>
+                                <span class="client-badge">Yahoo</span>
+                            </div>
+                            <button class="tech-details-toggle" onclick="event.stopPropagation(); toggleTechDetails(this)">VIEW TECH DETAILS</button>
+                            <div class="tech-details">
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">File Size:</span>
+                                    <span class="tech-spec-value">98KB</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">HTML:</span>
+                                    <span class="tech-spec-value">Validated (W3C)</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">CSS:</span>
+                                    <span class="tech-spec-value">Inline CSS</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Layout:</span>
+                                    <span class="tech-spec-value">Table-based</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Responsive:</span>
+                                    <span class="tech-spec-value">Yes (320px+)</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Images:</span>
+                                    <span class="tech-spec-value">Optimized JPG/PNG</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Media Queries:</span>
+                                    <span class="tech-spec-value">Supported</span>
+                                </div>
+                                <div class="tech-spec-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">
+                                    <a href="technical_specifications.html" target="_blank" class="tech-spec-link" onclick="event.stopPropagation()">View Full Technical Checklist →</a>
+                                </div>
+                            </div>
+                            <a href="post_purchase_upsell_email.html" target="_blank" class="email-link" onclick="event.stopPropagation()">VIEW EMAIL →</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="email-item" onclick="openEmail('customer_reactivation_email.html')">
                     <div class="email-item-content">
                         <div class="email-preview">
                             <img src="https://en.love-onfriday.com/cdn/shop/files/DVN-BDY-ST-01-Siyah_1_460x.jpg?v=1761122174" alt="Customer Reactivation Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://en.love-onfriday.com/cdn/shop/files/DVN-BDY-ST-01-Siyah_1_460x.jpg?v=1761122174';">
                         </div>
                         <div class="email-info">
-                            <div class="email-number">01</div>
+                            <div class="email-number">02</div>
                             <div class="email-name">CUSTOMER REACTIVATION</div>
                             <div class="email-type badge-glassmorphism">GLASSMORPHISM</div>
                             <div class="email-description">
@@ -2136,7 +2194,7 @@
                             <img src="https://static.ticimax.cloud/cdn-cgi/image/width=250,quality=90/53979/uploads/urunresimleri/buyuk/bilge-inox-19-100-standart-gn-kuvet-17-24d-ba.png" alt="Neumorphic Product Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://static.ticimax.cloud/cdn-cgi/image/width=250,quality=90/53979/uploads/urunresimleri/buyuk/bilge-inox-19-100-standart-gn-kuvet-17-24d-ba.png';">
                         </div>
                         <div class="email-info">
-                            <div class="email-number">02</div>
+                            <div class="email-number">03</div>
                             <div class="email-name">PRODUCT LAUNCH</div>
                             <div class="email-type badge-neumorphism">NEUMORPHISM</div>
                             <div class="email-description">
@@ -2194,7 +2252,7 @@
                             <img src="https://ae-pic-a1.aliexpress-media.com/kf/S139e89a761d844ebb3045186ef9224caQ.jpg_960x960q75.jpg" alt="Black Friday Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://ae-pic-a1.aliexpress-media.com/kf/S139e89a761d844ebb3045186ef9224caQ.jpg_960x960q75.jpg';">
                         </div>
                         <div class="email-info">
-                            <div class="email-number">02</div>
+                            <div class="email-number">04</div>
                             <div class="email-name">BLACK FRIDAY</div>
                             <div class="email-type badge-gradient">GRADIENT DESIGN</div>
                             <div class="email-description">
@@ -2252,7 +2310,7 @@
                             <img src="https://rezagemcollection.ca/cdn/shop/files/IMG_5824.jpg?v=1762626094&width=600" alt="Product Launch Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://rezagemcollection.ca/cdn/shop/files/IMG_5824.jpg?v=1762626094&width=600';">
                         </div>
                         <div class="email-info">
-                            <div class="email-number">03</div>
+                            <div class="email-number">05</div>
                             <div class="email-name">PRODUCT LAUNCH</div>
                             <div class="email-type badge-flat">FLAT DESIGN</div>
                             <div class="email-description">
@@ -2310,7 +2368,7 @@
                             <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0e18dfba1c884795a50cab6d1f564b2bN.jpg_960x960q75.jpg" alt="Welcome Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://ae-pic-a1.aliexpress-media.com/kf/S0e18dfba1c884795a50cab6d1f564b2bN.jpg_960x960q75.jpg';">
                         </div>
                         <div class="email-info">
-                            <div class="email-number">04</div>
+                            <div class="email-number">06</div>
                             <div class="email-name">WELCOME</div>
                             <div class="email-type badge-minimalism">MINIMALISM</div>
                             <div class="email-description">
@@ -2358,125 +2416,6 @@
                                 </div>
                             </div>
                             <a href="welcome_email.html" target="_blank" class="email-link" onclick="event.stopPropagation()">VIEW EMAIL →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="email-item" onclick="openEmail('customer_reactivation_email.html')">
-                    <div class="email-item-content">
-                        <div class="email-preview">
-                <div class="email-item" onclick="openEmail('abandoned_cart_email.html')">
-                    <div class="email-item-content">
-                        <div class="email-preview">
-                            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S640bbb0412964c67b0d855da687b11d9K.jpg_960x960q75.jpg" alt="Abandoned Cart Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://ae-pic-a1.aliexpress-media.com/kf/S640bbb0412964c67b0d855da687b11d9K.jpg_960x960q75.jpg';">
-                        </div>
-                        <div class="email-info">
-                            <div class="email-number">07</div>
-                            <div class="email-name">ABANDONED CART</div>
-                            <div class="email-type badge-neumorphism">NEUMORPHISM</div>
-                            <div class="email-description">
-                                Soft UI design with neumorphism effects - subtle shadows, highlights, and embossed appearance to remind customers of their abandoned items.
-                            </div>
-                            <div class="compatibility-badges">
-                                <span class="compatibility-label">Tested on:</span>
-                                <span class="client-badge">Gmail</span>
-                                <span class="client-badge">Outlook</span>
-                                <span class="client-badge">Apple Mail</span>
-                                <span class="client-badge">Yahoo</span>
-                            </div>
-                            <button class="tech-details-toggle" onclick="event.stopPropagation(); toggleTechDetails(this)">VIEW TECH DETAILS</button>
-                            <div class="tech-details">
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">File Size:</span>
-                                    <span class="tech-spec-value">82KB</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">HTML:</span>
-                                    <span class="tech-spec-value">Validated (W3C)</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">CSS:</span>
-                                    <span class="tech-spec-value">Inline CSS</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">Layout:</span>
-                                    <span class="tech-spec-value">Table-based</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">Responsive:</span>
-                                    <span class="tech-spec-value">Yes (320px+)</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">Images:</span>
-                                    <span class="tech-spec-value">Optimized JPG/PNG</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">Media Queries:</span>
-                                    <span class="tech-spec-value">Supported</span>
-                                </div>
-                                <div class="tech-spec-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">
-                                    <a href="technical_specifications.html" target="_blank" class="tech-spec-link" onclick="event.stopPropagation()">View Full Technical Checklist →</a>
-                                </div>
-                            </div>
-                            <a href="abandoned_cart_email.html" target="_blank" class="email-link" onclick="event.stopPropagation()">VIEW EMAIL →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="email-item" onclick="openEmail('post_purchase_upsell_email.html')">
-                    <div class="email-item-content">
-                        <div class="email-preview">
-                            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S8a04ac479a3141718a802a4b4381e668e.jpg_960x960q75.jpg" alt="Post-Purchase Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://ae-pic-a1.aliexpress-media.com/kf/S8a04ac479a3141718a802a4b4381e668e.jpg_960x960q75.jpg';">
-                        </div>
-                        <div class="email-info">
-                            <div class="email-number">06</div>
-                            <div class="email-name">POST-PURCHASE</div>
-                            <div class="email-type badge-material">MATERIAL DESIGN</div>
-                            <div class="email-description">
-                                Material Design email with elevation, shadows, and bold colors to showcase complementary products after purchase completion.
-                            </div>
-                            <div class="compatibility-badges">
-                                <span class="compatibility-label">Tested on:</span>
-                                <span class="client-badge">Gmail</span>
-                                <span class="client-badge">Outlook</span>
-                                <span class="client-badge">Apple Mail</span>
-                                <span class="client-badge">Yahoo</span>
-                            </div>
-                            <button class="tech-details-toggle" onclick="event.stopPropagation(); toggleTechDetails(this)">VIEW TECH DETAILS</button>
-                            <div class="tech-details">
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">File Size:</span>
-                                    <span class="tech-spec-value">98KB</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">HTML:</span>
-                                    <span class="tech-spec-value">Validated (W3C)</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">CSS:</span>
-                                    <span class="tech-spec-value">Inline CSS</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">Layout:</span>
-                                    <span class="tech-spec-value">Table-based</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">Responsive:</span>
-                                    <span class="tech-spec-value">Yes (320px+)</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">Images:</span>
-                                    <span class="tech-spec-value">Optimized JPG/PNG</span>
-                                </div>
-                                <div class="tech-spec-item">
-                                    <span class="tech-spec-label">Media Queries:</span>
-                                    <span class="tech-spec-value">Supported</span>
-                                </div>
-                                <div class="tech-spec-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">
-                                    <a href="technical_specifications.html" target="_blank" class="tech-spec-link" onclick="event.stopPropagation()">View Full Technical Checklist →</a>
-                                </div>
-                            </div>
-                            <a href="post_purchase_upsell_email.html" target="_blank" class="email-link" onclick="event.stopPropagation()">VIEW EMAIL →</a>
                         </div>
                     </div>
                 </div>
@@ -2633,7 +2572,7 @@
                             <img src="https://static.ticimax.cloud/cdn-cgi/image/width=250,quality=90/53979/uploads/urunresimleri/buyuk/bilge-inox-19-100-standart-gn-kuvet-17-24d-ba.png" alt="Neumorphic Product Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://static.ticimax.cloud/cdn-cgi/image/width=250,quality=90/53979/uploads/urunresimleri/buyuk/bilge-inox-19-100-standart-gn-kuvet-17-24d-ba.png';">
                         </div>
                         <div class="email-info">
-                            <div class="email-number">02</div>
+                            <div class="email-number">03</div>
                             <div class="email-name">PRODUCT LAUNCH</div>
                             <div class="email-type badge-neumorphism">NEUMORPHISM</div>
                             <div class="email-description">
@@ -2739,6 +2678,122 @@
                                 </div>
                             </div>
                             <a href="informative_email.html" target="_blank" class="email-link" onclick="event.stopPropagation()">VIEW EMAIL →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="email-item" onclick="openEmail('yooperlite_email.html')">
+                    <div class="email-item-content">
+                        <div class="email-preview">
+                            <img src="https://rezagemcollection.ca/cdn/shop/files/e14e4dc4-4a6cd6_e2abf31bf39844a09ea99863ba7bc6b5_mv2.jpg?v=1756628679&width=900" alt="Yooperlite Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://rezagemcollection.ca/cdn/shop/files/e14e4dc4-4a6cd6_e2abf31bf39844a09ea99863ba7bc6b5_mv2.jpg?v=1756628679&width=900';">
+                        </div>
+                        <div class="email-info">
+                            <div class="email-number">08</div>
+                            <div class="email-name">YOOPERLITE GEMSTONE</div>
+                            <div class="email-type badge-product">PRODUCT EMAIL</div>
+                            <div class="email-description">
+                                Educational product email showcasing Yooperlite gemstone beads with scientific information, geological details, and special offers. Optimized for email clients with responsive design.
+                            </div>
+                            <div class="compatibility-badges">
+                                <span class="compatibility-label">Tested on:</span>
+                                <span class="client-badge">Gmail</span>
+                                <span class="client-badge">Outlook</span>
+                                <span class="client-badge">Apple Mail</span>
+                                <span class="client-badge">Yahoo</span>
+                            </div>
+                            <button class="tech-details-toggle" onclick="event.stopPropagation(); toggleTechDetails(this)">VIEW TECH DETAILS</button>
+                            <div class="tech-details">
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">File Size:</span>
+                                    <span class="tech-spec-value">96KB</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">HTML:</span>
+                                    <span class="tech-spec-value">Validated (W3C)</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">CSS:</span>
+                                    <span class="tech-spec-value">Inline CSS</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Layout:</span>
+                                    <span class="tech-spec-value">Table-based</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Responsive:</span>
+                                    <span class="tech-spec-value">Yes (320px+)</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Images:</span>
+                                    <span class="tech-spec-value">Optimized JPG/PNG</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Media Queries:</span>
+                                    <span class="tech-spec-value">Supported</span>
+                                </div>
+                                <div class="tech-spec-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">
+                                    <a href="technical_specifications.html" target="_blank" class="tech-spec-link" onclick="event.stopPropagation()">View Full Technical Checklist →</a>
+                                </div>
+                            </div>
+                            <a href="yooperlite_email.html" target="_blank" class="email-link" onclick="event.stopPropagation()">VIEW EMAIL →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="email-item" onclick="openEmail('abandoned_cart_email.html')">
+                    <div class="email-item-content">
+                        <div class="email-preview">
+                            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S640bbb0412964c67b0d855da687b11d9K.jpg_960x960q75.jpg" alt="Abandoned Cart Email Preview" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://ae-pic-a1.aliexpress-media.com/kf/S640bbb0412964c67b0d855da687b11d9K.jpg_960x960q75.jpg';">
+                        </div>
+                        <div class="email-info">
+                            <div class="email-number">09</div>
+                            <div class="email-name">ABANDONED CART</div>
+                            <div class="email-type badge-neumorphism">NEUMORPHISM</div>
+                            <div class="email-description">
+                                Soft UI design with neumorphism effects - subtle shadows, highlights, and embossed appearance to remind customers of their abandoned items.
+                            </div>
+                            <div class="compatibility-badges">
+                                <span class="compatibility-label">Tested on:</span>
+                                <span class="client-badge">Gmail</span>
+                                <span class="client-badge">Outlook</span>
+                                <span class="client-badge">Apple Mail</span>
+                                <span class="client-badge">Yahoo</span>
+                            </div>
+                            <button class="tech-details-toggle" onclick="event.stopPropagation(); toggleTechDetails(this)">VIEW TECH DETAILS</button>
+                            <div class="tech-details">
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">File Size:</span>
+                                    <span class="tech-spec-value">82KB</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">HTML:</span>
+                                    <span class="tech-spec-value">Validated (W3C)</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">CSS:</span>
+                                    <span class="tech-spec-value">Inline CSS</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Layout:</span>
+                                    <span class="tech-spec-value">Table-based</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Responsive:</span>
+                                    <span class="tech-spec-value">Yes (320px+)</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Images:</span>
+                                    <span class="tech-spec-value">Optimized JPG/PNG</span>
+                                </div>
+                                <div class="tech-spec-item">
+                                    <span class="tech-spec-label">Media Queries:</span>
+                                    <span class="tech-spec-value">Supported</span>
+                                </div>
+                                <div class="tech-spec-item" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">
+                                    <a href="technical_specifications.html" target="_blank" class="tech-spec-link" onclick="event.stopPropagation()">View Full Technical Checklist →</a>
+                                </div>
+                            </div>
+                            <a href="abandoned_cart_email.html" target="_blank" class="email-link" onclick="event.stopPropagation()">VIEW EMAIL →</a>
                         </div>
                     </div>
                 </div>
