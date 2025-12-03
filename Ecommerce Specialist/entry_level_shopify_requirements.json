@@ -1,0 +1,185 @@
+{
+  "entry_level_shopify_jobs": {
+    "summary": "These are the 3 entry-level jobs (1-3 years experience) that require Shopify skills",
+    "jobs": [
+      {
+        "company": "Orient Depot",
+        "title": "Ecommerce Specialist",
+        "location": "Mississauga, ON",
+        "salary": "Not specified",
+        "experience_required": "1+ years",
+        "shopify_requirements": {
+          "minimum_experience": "1 year experience with Shopify",
+          "what_they_want_you_to_do": [
+            "Maintain and create new online product listings on Shopify",
+            "Manage and execute backend of Shopify store",
+            "Monitor and update online inventory on Shopify",
+            "Execute online sales and promotions on Shopify"
+          ],
+          "specific_shopify_tasks": [
+            "Product listing creation and maintenance",
+            "Backend store management",
+            "Inventory synchronization",
+            "Sales and promotion execution"
+          ],
+          "related_skills_needed": [
+            "Online Marketplaces experience (Amazon, Walmart, Bestbuy) - 1 year minimum",
+            "Administrative work experience",
+            "Microsoft Office proficiency",
+            "Order fulfillment (nice to have)",
+            "Google Analytics (preferred)",
+            "Facebook/Instagram Ads (preferred)",
+            "Newsletter marketing (preferred)"
+          ],
+          "education": "Post-secondary education (preferred, Marketing related is a plus)",
+          "soft_skills": [
+            "Organized, able to multi-task",
+            "Excellent English (written and interpersonal)",
+            "Positive personality",
+            "Excellent phone and customer service skills",
+            "Strong computer skills",
+            "Quick learner and self-starter"
+          ]
+        }
+      },
+      {
+        "company": "BEDSMART",
+        "title": "Marketing & E-Commerce Specialist",
+        "location": "Ontario",
+        "salary": "$39,836-$69,315",
+        "experience_required": "1-3 years",
+        "shopify_requirements": {
+          "minimum_experience": "Strong knowledge of Shopify/WooCommerce (any combination is an asset)",
+          "what_they_want_you_to_do": [
+            "Manage and optimize product listings on Shopify/WooCommerce site",
+            "Manage website updates on Shopify/WooCommerce",
+            "Optimize product listings for better performance"
+          ],
+          "specific_shopify_tasks": [
+            "Product listing optimization",
+            "Website management and updates",
+            "Multi-platform management (also Amazon, Wayfair)"
+          ],
+          "related_skills_needed": [
+            "1-3 years experience in marketing, e-commerce, or digital advertising",
+            "Amazon Seller Central knowledge (asset)",
+            "Wayfair Partner Home knowledge (asset)",
+            "SEO familiarity",
+            "Google Analytics",
+            "Meta Ads",
+            "Amazon PPC",
+            "Strong analytical skills"
+          ],
+          "education": "No Degree Mentioned",
+          "nice_to_have": [
+            "Experience in furniture, retail, or consumer goods",
+            "Graphic design or video editing skills",
+            "Knowledge of inventory management and product launches"
+          ],
+          "soft_skills": [
+            "Excellent written and verbal communication",
+            "Creative thinker",
+            "Attention to detail",
+            "Ability to translate data into action"
+          ]
+        }
+      },
+      {
+        "company": "Pets Supplies",
+        "title": "E-Commerce & Digital Marketing Coordinator",
+        "location": "Toronto, ON",
+        "salary": "$45,000-$55,000",
+        "experience_required": "2 years",
+        "shopify_requirements": {
+          "minimum_experience": "Proficiency with Shopify (2 years e-commerce experience required)",
+          "what_they_want_you_to_do": [
+            "Manage and optimize online stores (Shopify) to drive sales growth",
+            "Optimize product listings on Shopify",
+            "Oversee marketplace listings and inventory accuracy"
+          ],
+          "specific_shopify_tasks": [
+            "Online store management",
+            "Product listing optimization",
+            "Sales growth optimization",
+            "Inventory management"
+          ],
+          "related_skills_needed": [
+            "Minimum 2 years experience in e-commerce sales and digital marketing",
+            "Google Analytics proficiency",
+            "Google Ads proficiency",
+            "Meta Business Suite proficiency",
+            "Strong understanding of SEO, SEM",
+            "Email marketing tools",
+            "Content strategy"
+          ],
+          "education": "Not specified",
+          "nice_to_have": [
+            "Previous experience in Pet Supplies industry strongly preferred"
+          ],
+          "soft_skills": [
+            "Excellent written and visual communication skills",
+            "Data-driven mindset",
+            "Ability to interpret metrics and optimize performance",
+            "Ability to work independently",
+            "Multitask and meet deadlines in fast-paced environment"
+          ]
+        }
+      }
+    ],
+    "common_shopify_requirements": {
+      "what_all_3_jobs_require": [
+        "Shopify platform knowledge/experience",
+        "Product listing creation and management",
+        "Website/store optimization",
+        "Inventory management"
+      ],
+      "most_common_additional_skills": [
+        "Google Analytics (all 3 mention it)",
+        "Digital marketing experience",
+        "Multi-platform experience (Amazon, marketplaces)",
+        "SEO knowledge",
+        "Analytical skills"
+      ],
+      "experience_level": "1-3 years total e-commerce/marketing experience",
+      "shopify_specific_experience": "1 year minimum (Orient Depot), or general e-commerce with Shopify knowledge (others)"
+    },
+    "what_you_need_to_apply": {
+      "must_have": [
+        "Shopify experience (1 year minimum for Orient Depot, or demonstrated knowledge for others)",
+        "Product listing management skills",
+        "Basic e-commerce understanding",
+        "Google Analytics knowledge"
+      ],
+      "highly_desirable": [
+        "Multi-marketplace experience (Amazon, Walmart, etc.)",
+        "Digital marketing experience",
+        "SEO knowledge",
+        "Analytical/data skills"
+      ],
+      "nice_to_have": [
+        "Order fulfillment experience",
+        "Email marketing",
+        "Social media advertising (Meta Ads)",
+        "Industry-specific experience (furniture, pet supplies, etc.)"
+      ]
+    },
+    "comparison_table": {
+      "orient_depot": {
+        "shopify_experience": "1 year minimum (explicitly required)",
+        "focus": "Backend management, product listings, inventory",
+        "easiest_entry": "Yes - most specific requirements"
+      },
+      "bedsmart": {
+        "shopify_experience": "Strong knowledge (asset, not strict requirement)",
+        "focus": "Marketing + e-commerce, multi-platform",
+        "easiest_entry": "Medium - flexible on Shopify experience"
+      },
+      "pets_supplies": {
+        "shopify_experience": "Proficiency (2 years e-commerce required)",
+        "focus": "Digital marketing + e-commerce coordination",
+        "easiest_entry": "Medium - requires 2 years experience"
+      }
+    }
+  }
+}
+

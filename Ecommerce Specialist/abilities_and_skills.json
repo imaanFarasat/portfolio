@@ -1,0 +1,487 @@
+{
+  "personal_info": {
+    "name": "Iman Farasat",
+    "email": "imaan.farasat@gmail.com",
+    "phone": "(437) 869-0604",
+    "location": "Toronto, ON",
+    "portfolio": "View Portfolio"
+  },
+  "core_competencies": {
+    "ecommerce_platforms": [
+      "Shopify",
+      "Shopify Plus",
+      "Wix",
+      "WordPress",
+      "Amazon Seller Central",
+      "Walmart Marketplace",
+      "Etsy",
+      "Pinterest",
+      "Magento",
+      "E-Commerce Platform (general)"
+    ],
+    "inventory_operations": [
+      "Large-scale inventory management (20,000+ variants)",
+      "Order fulfillment",
+      "Product listing creation",
+      "Backend store management",
+      "API integration",
+      "JSON data handling for product management",
+      "Complex variant management",
+      "Inventory synchronization",
+      "Real-time inventory updates",
+      "99%+ inventory accuracy"
+    ],
+    "digital_marketing": [
+      "Klaviyo (email marketing, automation, signup forms, segmentation)",
+      "Klaviyo flows (automation workflows)",
+      "Klaviyo automations",
+      "Klaviyo campaigns",
+      "Klaviyo newsletters",
+      "Salesforce Marketing Cloud (limited - email-related parts only)",
+      "HubSpot (limited - email-related parts only)",
+      "Google Analytics (GA4)",
+      "Google Analytics Universal",
+      "Google Tag Manager",
+      "Google Search Console",
+      "Facebook/Instagram Ads",
+      "Meta Pixel",
+      "Newsletter marketing",
+      "SEO optimization",
+      "Keyword research and ranking",
+      "Meta fields and meta objects for SEO",
+      "Internal linking strategies",
+      "SEM (Search Engine Marketing)",
+      "CRO (Conversion Rate Optimization)",
+      "Email/SMS automation",
+      "Loyalty integrations",
+      "A/B testing"
+    ],
+    "analytics_reporting": [
+      "Google Analytics (GA4)",
+      "Google Analytics Universal",
+      "Google Tag Manager",
+      "Google Search Console",
+      "Power BI",
+      "Shopify Analytics",
+      "Platform-specific analytics dashboards",
+      "Performance metrics tracking",
+      "KPI tracking (traffic, sales, conversion, retention)",
+      "Data visualization",
+      "Dashboard creation",
+      "Performance reporting",
+      "Conversion tracking",
+      "E-commerce tracking",
+      "Event tracking",
+      "Custom reports"
+    ],
+    "technical_skills": {
+      "programming_languages": [
+        "HTML",
+        "CSS",
+        "JavaScript (with AI assistance, solid comprehension)",
+        "Liquid templating (Shopify)"
+      ],
+      "api_data_integration": [
+        "REST API",
+        "Shopify REST API",
+        "Shopify GraphQL API",
+        "JSON data handling",
+        "Product data import/export via API",
+        "API-based product management",
+        "Webhooks",
+        "Google Sheets API",
+        "Google Drive API",
+        "Automated product synchronization",
+        "CSV import/export for bulk product uploads",
+        "Fast automation for product uploads via CSV and Google Drive"
+      ],
+      "systems_integrations": [
+        "ERP/POS integrations",
+        "Microsoft Dynamics 365 BC",
+        "LS Retail POS",
+        "BigQuery",
+        "SFTP pipelines",
+        "Data cleansing and mapping",
+        "Platform migrations",
+        "PIM systems (Product Information Management)"
+      ],
+      "testing_qa": [
+        "QA testing for site features",
+        "User Acceptance Testing (UAT)",
+        "Regression testing",
+        "Sandbox validation",
+        "Bug fixes and troubleshooting"
+      ],
+      "performance_optimization": [
+        "Site speed optimization",
+        "Mobile performance optimization",
+        "Conversion funnel optimization",
+        "Page load time improvement"
+      ],
+      "tools_software": [
+        "Microsoft Office Suite (Advanced Excel, Word, PowerPoint, Outlook)",
+        "Google Workspace",
+        "Google Sheets",
+        "Google Drive",
+        "Image editing software",
+        "CRM systems",
+        "Shopify applications management"
+      ]
+    },
+    "administrative": [
+      "Data entry",
+      "Documentation",
+      "Multi-tasking",
+      "Time management",
+      "Vendor coordination",
+      "Product development support"
+    ],
+    "customer_service": [
+      "Phone support",
+      "Email communication",
+      "Problem resolution",
+      "Order tracking",
+      "Customer inquiries"
+    ]
+  },
+  "key_achievements": {
+    "email_marketing": {
+      "open_rate": "36.5% (46% above industry standard of 20-25%)",
+      "click_through_rate": "2.1% (at industry standard)",
+      "conversion_rate": "3.2% (above industry standard of 2-5%)",
+      "campaigns_managed": "100+ email campaigns",
+      "campaign_types": [
+        "Product launches",
+        "Promotional offers",
+        "Welcome sequences",
+        "Cart abandonment",
+        "Post-purchase sequences"
+      ]
+    },
+    "seo_results": {
+      "rankings_achieved": "#1 Google rankings for 10+ high-volume keywords",
+      "keywords_examples": [
+        "labradorite",
+        "blue gemstones",
+        "howlite",
+        "unakite stone"
+      ],
+      "impact": "Significantly increased organic website traffic and visibility"
+    },
+    "inventory_management": {
+      "variants_managed": "20,000+ product variants",
+      "inventory_accuracy": "99%+",
+      "error_reduction": "Reduced order fulfillment errors by 30%",
+      "complexity": "Complex variant configurations and detailed inventory tracking"
+    },
+    "automation_systems": {
+      "product_update_system": "Built automated product update system integrating Google Sheets, Google Drive, and Shopify via API/webhooks",
+      "fast_automation": "Fast automation for product uploads via CSV and Google Drive",
+      "csv_import_export": "Bulk product uploads via CSV import/export",
+      "benefits": [
+        "Eliminated manual data entry",
+        "Ensured real-time product synchronization",
+        "Streamlined workflow",
+        "Rapid product catalog updates",
+        "Efficient bulk data management"
+      ]
+    },
+    "platform_migrations": {
+      "experience": "Successfully migrated ecommerce platforms",
+      "processes": [
+        "Data preparation",
+        "Data cleansing",
+        "Migration of product catalogs",
+        "Customer data migration",
+        "Inventory systems migration",
+        "Subscriber data migration",
+        "Template migration",
+        "Automation workflow migration"
+      ],
+      "testing": [
+        "UAT (User Acceptance Testing)",
+        "Regression testing",
+        "Sandbox validation"
+      ]
+    },
+    "sales_performance": {
+      "improvements": "Increased online sales through optimized product listings and strategic promotions",
+      "products_launched": "150+ new products successfully launched"
+    }
+  },
+  "work_experience": {
+    "current_role": {
+      "title": "Email Marketing Specialist & Strategist / Ecommerce Specialist",
+      "company": "rezagemcollection.ca",
+      "period": "Apr 2024 - Present",
+      "responsibilities": [
+        "Maintained and created new online product listings across multiple ecommerce channels (Shopify, Amazon, Walmart, Etsy, Pinterest)",
+        "Managed 20,000+ product variants with complex configurations",
+        "Monitored and updated online inventory levels in real-time across all platforms",
+        "Executed order fulfillment processes for ecommerce channels",
+        "Managed and executed backend operations of Shopify store",
+        "Developed and implemented automated product update system using Google Sheets, Google Drive, API integrations, and webhooks",
+        "Implemented SEO strategies and optimized website content",
+        "Monitored ecommerce sales performance using Google Analytics",
+        "Developed and managed Klaviyo email marketing campaigns, automation workflows, and signup forms",
+        "Liaised with designers and outsourced vendors for marketing materials"
+      ]
+    },
+    "previous_roles": {
+      "email_marketing_coordinator": {
+        "company": "MTN Irancell",
+        "period": "Aug 2021 - May 2023",
+        "responsibilities": [
+          "Developed and executed responsive email marketing campaigns",
+          "Optimized content for B2B and B2C channels",
+          "Managed campaigns for product launches, promotions, and customer communications",
+          "Collaborated on email initiatives with Digikala",
+          "Integrated product data and supported AliExpress workflows",
+          "Configured email authentication (SPF, DKIM, DMARC)",
+          "Implemented IP/domain warming plans",
+          "Executed SMS and push notification campaigns",
+          "Analyzed performance metrics across channels"
+        ]
+      },
+      "freelance_agency": {
+        "period": "Jan 2023 - Apr 2024",
+        "clients": [
+          {
+            "name": "MintMarket",
+            "platforms": ["Shopify", "Amazon", "Walmart"],
+            "work": [
+              "Managed product listings across multiple marketplaces",
+              "Monitored and updated inventory levels across all channels",
+              "Optimized product content for desktop and mobile performance",
+              "Improved product discoverability and search functionality",
+              "Managed backend operations of Shopify store",
+              "Executed order fulfillment processes",
+              "Developed and executed Klaviyo email marketing campaigns with A/B testing",
+              "Analyzed performance metrics using Google Analytics",
+              "Collaborated on data mapping and platform integrations"
+            ]
+          },
+          {
+            "name": "Velasca",
+            "platforms": ["Shopify", "Amazon", "Walmart"],
+            "work": [
+              "Managed product catalog and listings",
+              "Updated inventory levels and pricing across multiple sales channels",
+              "Optimized product content and improved product discoverability",
+              "Created and managed product collections for seasonal promotions",
+              "Created and managed Klaviyo email automation flows",
+              "Developed segmented campaigns for product launches and seasonal promotions",
+              "Monitored inventory levels and coordinated order fulfillment processes",
+              "Resolved order management issues"
+            ]
+          },
+          {
+            "name": "The Bowery Company",
+            "platforms": ["Magento", "Amazon", "Walmart", "Shopify Plus (migration)"],
+            "work": [
+              "Managed product listings for premium furniture collections",
+              "Optimized B2C and B2B product content",
+              "Supported platform migration to Shopify Plus",
+              "Assisted with data preparation, cleansing, and migration",
+              "Developed and executed Klaviyo email marketing campaigns",
+              "Analyzed user behavior and funnel performance",
+              "Collaborated on system testing and validation"
+            ]
+          },
+          {
+            "name": "İç Giyim Perisi",
+            "platforms": ["E-Commerce Platform", "Amazon"],
+            "work": [
+              "Managed product listings and catalog management",
+              "Ensured catalog accuracy and compliance with platform standards",
+              "Optimized product content for specialized collections",
+              "Developed targeted email marketing campaigns with customer segmentation",
+              "Supported list-building initiatives",
+              "Monitored and resolved order management issues",
+              "Coordinated with fulfillment partners",
+              "Analyzed performance metrics to optimize conversion rates"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "specialized_skills": {
+    "platform_migrations": {
+      "experience": "Led e-commerce platform migrations",
+      "platforms": ["Square to Shopify", "Magento to Shopify Plus", "Legacy platforms to Shopify Plus"],
+      "processes": [
+        "Data preparation",
+        "Data cleansing",
+        "Product catalog migration",
+        "Customer data migration",
+        "Inventory systems migration",
+        "Subscriber data migration",
+        "Template migration",
+        "Automation workflow migration"
+      ]
+    },
+    "email_marketing": {
+      "platforms": ["Klaviyo", "Mailchimp", "Salesforce Marketing Cloud", "HubSpot", "Shopify Email"],
+      "salesforce_email": {
+        "experience_level": "Limited (email-related parts only)",
+        "capabilities": [
+          "Email campaign management",
+          "Email automation workflows",
+          "Email list management",
+          "Email performance tracking"
+        ]
+      },
+      "hubspot_email": {
+        "experience_level": "Limited (email-related parts only)",
+        "capabilities": [
+          "Email campaign creation",
+          "Email automation",
+          "Email workflows",
+          "Email performance analytics"
+        ]
+      },
+      "klaviyo_specific": {
+        "flows": [
+          "Welcome series flows",
+          "Cart abandonment flows",
+          "Post-purchase flows",
+          "Browse abandonment flows",
+          "Win-back flows",
+          "Custom automation flows"
+        ],
+        "automations": [
+          "Triggered automations",
+          "Scheduled automations",
+          "Event-based automations",
+          "Customer lifecycle automations"
+        ],
+        "campaigns": [
+          "Email campaigns",
+          "SMS campaigns",
+          "Multi-channel campaigns",
+          "Segmented campaigns",
+          "A/B tested campaigns"
+        ],
+        "newsletters": [
+          "Weekly newsletters",
+          "Monthly newsletters",
+          "Product launch newsletters",
+          "Promotional newsletters",
+          "Seasonal newsletters"
+        ],
+        "other_features": [
+          "Signup forms",
+          "Segmentation strategies",
+          "Email flows connected to product listings",
+          "Upsell and cross-sell automation"
+        ]
+      },
+      "capabilities": [
+        "Email campaign development and execution",
+        "Automation workflow creation",
+        "Signup form development",
+        "Segmentation strategies",
+        "A/B testing",
+        "Email deliverability management",
+        "Sender reputation management",
+        "IP/domain warming",
+        "Email authentication (SPF, DKIM, DMARC)",
+        "SMS marketing",
+        "Push notifications",
+        "Email flows connected to product listings",
+        "Upsell and cross-sell automation"
+      ],
+      "compliance": ["CAN-SPAM", "CASL", "GDPR"]
+    },
+    "seo_sem": {
+      "strategies": [
+        "SEO strategy development and implementation",
+        "Keyword research and ranking",
+        "On-page optimization",
+        "Content optimization",
+        "Technical SEO",
+        "SEM campaign management",
+        "Meta fields and meta objects for SEO",
+        "Internal linking strategies",
+        "Blog-to-product linking",
+        "Product title and meta description optimization"
+      ],
+      "results": "Achieved #1 Google rankings for 10+ high-volume keywords"
+    },
+    "ux_ui_optimization": {
+      "capabilities": [
+        "User behavior analysis",
+        "Funnel performance analysis",
+        "UX/UI improvements",
+        "Conversion rate optimization",
+        "Site navigation optimization",
+        "Checkout optimization",
+        "Product discovery enhancement",
+        "Mobile and desktop optimization",
+        "Site speed optimization",
+        "Page load time improvement"
+      ]
+    },
+    "qa_testing": {
+      "capabilities": [
+        "QA testing for site features",
+        "User Acceptance Testing (UAT)",
+        "Regression testing",
+        "Sandbox validation",
+        "Bug fixes and troubleshooting",
+        "Site functionality testing",
+        "Cross-browser testing",
+        "Mobile responsiveness testing"
+      ]
+    },
+    "order_management": {
+      "capabilities": [
+        "Order fulfillment coordination",
+        "Failed transaction resolution",
+        "Fulfillment error resolution",
+        "Refund processing",
+        "Return management",
+        "3PL coordination",
+        "Supply chain liaison",
+        "Inventory availability management"
+      ]
+    },
+    "data_management": {
+      "capabilities": [
+        "Data cleansing",
+        "Data mapping (products, vendors, customers)",
+        "Platform consistency maintenance",
+        "Catalog accuracy management",
+        "Product data import/export",
+        "Bulk data updates"
+      ]
+    },
+    "compliance_regulations": {
+      "email": ["CAN-SPAM", "CASL", "GDPR"],
+      "industry": ["Healthcare industry accessibility standards"],
+      "platform": ["Platform standards compliance"]
+    }
+  },
+  "soft_skills": [
+    "Communication",
+    "Problem-solving",
+    "Detail-oriented",
+    "Organized",
+    "Proactive",
+    "Analytical strength",
+    "Adaptability",
+    "Teamwork",
+    "Curiosity",
+    "Multi-tasking",
+    "Time management",
+    "Vendor coordination",
+    "Cross-functional collaboration"
+  ],
+  "languages": {
+    "english": "Fluent (written and verbal)"
+  },
+  "work_authorization": "Authorized to work in Canada",
+  "availability": "Immediate"
+}
+
