@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Subject Lines Showcase — Iman Farasat</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        /* ============================================
+           RESET & BASE STYLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            min-height: 100vh;
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ============================================
+           SIDEBAR NAVIGATION
+           ============================================ */
+        .sidebar {
+            width: 280px;
+            background: #ffffff;
+            padding: 48px 32px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #e8e8e8;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.625rem;
+            font-weight: 700;
+            margin-bottom: 56px;
+            color: #1a1a1a;
+            line-height: 1.2;
+            letter-spacing: -0.3px;
+        }
+
+        .logo a {
+            color: #1a1a1a;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .logo a:hover {
+            opacity: 0.7;
+        }
+
+        .menu-title {
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #888888;
+        }
+
+        .menu-item {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            padding: 10px 12px;
+            border-radius: 6px;
+            color: #666666;
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu-item:hover {
+            background: #f8f8f8;
+            color: #1a1a1a;
+        }
+
+        .menu-item.active {
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+
+        /* ============================================
+           MAIN CONTENT AREA
+           ============================================ */
+        .main-content {
+            margin-left: 280px;
+            flex: 1;
+            padding: 64px 96px;
+            background: #fafafa;
+            max-width: 1000px;
+        }
+
+        .header {
+            margin-bottom: 64px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .header h1 {
+            font-size: 3.25rem;
+            font-weight: 700;
+            letter-spacing: -1.2px;
+            line-height: 1.15;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .header p {
+            font-size: 1.0625rem;
+            color: #666666;
+            font-weight: 400;
+        }
+
+        /* ============================================
+           CONTENT SECTIONS
+           ============================================ */
+        .content-section {
+            margin-bottom: 72px;
+        }
+
+        .content-section h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.8px;
+            margin-bottom: 32px;
+            color: #1a1a1a;
+            line-height: 1.25;
+        }
+
+        .content-section h3 {
+            font-size: 1.375rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            line-height: 1.4;
+        }
+
+        .content-section p {
+            font-size: 1.0625rem;
+            line-height: 1.75;
+            margin-bottom: 20px;
+            color: #2a2a2a;
+        }
+
+        .meta-info {
+            margin: 24px 0 32px;
+        }
+
+        .meta-info p {
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #555555;
+        }
+
+        /* ============================================
+           SUBJECT LINES TABLE
+           ============================================ */
+        .subject-lines-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .subject-lines-table thead {
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+
+        .subject-lines-table th {
+            padding: 20px 24px;
+            text-align: left;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .subject-lines-table th:first-child {
+            width: 60%;
+        }
+
+        .subject-lines-table th:last-child {
+            text-align: center;
+        }
+
+        .subject-lines-table tbody tr {
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.2s ease;
+        }
+
+        .subject-lines-table tbody tr:hover {
+            background: #fafafa;
+        }
+
+        .subject-lines-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .subject-lines-table td {
+            padding: 20px 24px;
+            font-size: 1rem;
+            color: #2a2a2a;
+        }
+
+        .subject-line-text {
+            font-weight: 500;
+            color: #1a1a1a;
+            line-height: 1.5;
+        }
+
+        .open-rate {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .open-rate.excellent {
+            color: #10b981;
+        }
+
+        .open-rate.very-good {
+            color: #059669;
+        }
+
+        .open-rate.good {
+            color: #34d399;
+        }
+
+        .open-rate.above-average {
+            color: #6ee7b7;
+        }
+
+        .performance-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-left: 12px;
+        }
+
+        .badge-excellent {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .badge-very-good {
+            background: #a7f3d0;
+            color: #047857;
+        }
+
+        .badge-good {
+            background: #d1fae5;
+            color: #059669;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border-left: 3px solid #1a1a1a;
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 6px;
+        }
+
+        .info-box p {
+            margin-bottom: 8px;
+            font-size: 0.9375rem;
+            color: #555555;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-showcase {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .product-image-container {
+            display: inline-block;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .product-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .product-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: 1px solid #e8e8e8;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .product-link:hover {
+            background: #f8f8f8;
+            border-color: #d0d0d0;
+            color: #1a1a1a;
+        }
+
+        .product-link::after {
+            content: " →";
+            margin-left: 4px;
+        }
+
+        /* ============================================
+           RESPONSIVE STYLES
+           ============================================ */
+        @media (max-width: 1024px) {
+            .sidebar {
+                width: 240px;
+                padding: 40px 28px;
+            }
+
+            .main-content {
+                margin-left: 240px;
+                padding: 56px 64px;
+            }
+
+            .header h1 {
+                font-size: 2.875rem;
+            }
+
+            .content-section h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: relative;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid #e8e8e8;
+                padding: 32px 24px;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 40px 24px;
+            }
+
+            .header {
+                margin-bottom: 48px;
+                padding-bottom: 24px;
+            }
+
+            .header h1 {
+                font-size: 2.25rem;
+            }
+
+            .content-section {
+                margin-bottom: 64px;
+            }
+
+            .content-section h2 {
+                font-size: 1.875rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.25rem;
+                margin-top: 32px;
+            }
+
+            .subject-lines-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            .subject-lines-table thead,
+            .subject-lines-table tbody,
+            .subject-lines-table tr,
+            .subject-lines-table td {
+                display: block;
+            }
+
+            .subject-lines-table thead {
+                display: none;
+            }
+
+            .subject-lines-table tr {
+                margin-bottom: 16px;
+                border: 1px solid #e8e8e8;
+                border-radius: 8px;
+                padding: 16px;
+            }
+
+            .subject-lines-table td {
+                padding: 12px 0;
+                text-align: left;
+            }
+
+            .subject-lines-table td:before {
+                content: attr(data-label);
+                font-weight: 600;
+                display: block;
+                margin-bottom: 8px;
+                color: #666666;
+                font-size: 0.875rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .product-image-container {
+                max-width: 100%;
+            }
+
+            .product-link {
+                font-size: 0.875rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- LEFT SIDEBAR MENU -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="email_portfolio.html">Iman Farasat</a>
+            </div>
+            
+            <div class="menu-title">NAVIGATION</div>
+            
+            <a href="email_portfolio.html" class="menu-item">← Back to Portfolio</a>
+            <a href="copywriting_foundations.html" class="menu-item">Copywriting Foundations</a>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <div class="header">
+                <h1>Email Subject Lines Showcase</h1>
+                <p>High-performing subject lines that drove exceptional open rates across multiple campaigns</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Fashion & Retail Campaign</h2>
+                
+                <div class="meta-info">
+                    <p><strong>Client:</strong> Bare Essentials Dubai</p>
+                    <p><strong>Industry:</strong> Fashion / Swimwear Retail</p>
+                    <p><strong>Campaign Type:</strong> Seasonal / Product Launch</p>
+                    <p><strong>Target Audience:</strong> Women's Fashion / Summer Collection</p>
+                </div>
+
+                <div class="product-showcase">
+                    <div class="product-image-container">
+                        <img src="https://s.alicdn.com/@sc04/kf/H05d1f90dbf9642478c9c8ab8bbe3213bS.jpg?avif=close&webp=close" 
+                             alt="Bikini Product Image" 
+                             loading="lazy">
+                    </div>
+                </div>
+
+                <p>
+                    These subject lines were crafted for a summer swimwear campaign for <a href="https://www.bareessentialsdubai.ae/products/leila-multi-fit-wrap-tri-top-mid-rise-pant-navy" target="_blank" rel="noopener noreferrer" style="color: #1a1a1a; text-decoration: underline;">Bare Essentials Dubai</a>, designed to capture attention with playful, seasonal messaging that evokes summer vibes and confidence. The lines balance sensuality with sophistication, appealing to the target audience's desire for summer style and self-expression.
+                </p>
+
+                <h3>Subject Lines Performance</h3>
+                
+                <table class="subject-lines-table">
+                    <thead>
+                        <tr>
+                            <th>Subject Line</th>
+                            <th>Open Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-line-text">
+                                Hot Sun, Hot Body, Hot Bikini
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">40.3%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Be-keen on Bikini: Your Summer Must-Have
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">39.7%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Skin, Sun & Your New Bikini
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">37.2%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Catch the Sun, Show the Skin
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">36.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Summer, Sea & Sexy
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">35.9%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin: 96px 0; border-top: 1px solid #e8e8e8;"></div>
+
+            <div class="content-section">
+                <h2>Black Friday Shoe Sale Campaign</h2>
+                
+                <div class="meta-info">
+                    <p><strong>Client:</strong> Men's Footwear Retailer</p>
+                    <p><strong>Industry:</strong> Fashion / Footwear Retail</p>
+                    <p><strong>Campaign Type:</strong> Black Friday Sale / Seasonal Promotion</p>
+                    <p><strong>Target Audience:</strong> Men's Fashion / Shoe Enthusiasts</p>
+                </div>
+
+                <div class="product-showcase">
+                    <div class="product-image-container">
+                        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S139e89a761d844ebb3045186ef9224caQ.jpg_960x960q75.jpg" 
+                             alt="Black Friday Shoe Sale" 
+                             loading="lazy"
+                             crossorigin="anonymous" 
+                             referrerpolicy="no-referrer"
+                             onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://ae-pic-a1.aliexpress-media.com/kf/S139e89a761d844ebb3045186ef9224caQ.jpg_960x960q75.jpg';">
+                    </div>
+                </div>
+
+                <p>
+                    These subject lines were crafted for a Black Friday shoe sale campaign, combining the urgency of the Friday sale event with product-specific messaging. The lines leverage the Black Friday tradition while creating immediate relevance through day-of-week references and clear value propositions.
+                </p>
+
+                <h3>Subject Lines Performance</h3>
+                
+                <table class="subject-lines-table">
+                    <thead>
+                        <tr>
+                            <th>Subject Line</th>
+                            <th>Open Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-line-text">
+                                It's Friday — Black Shoes, Big Sale!
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">42.1%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Friday's Here: Black Shoes Are On Sale 🖤
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">40.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Black Friday Vibes: Shoes You'll Love on Sale
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">39.5%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                This Friday, Your Favorite Black Shoes Are On Sale
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">38.2%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Black Shoes. Friday. Sale. Don't Miss Out!
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">37.6%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin: 96px 0; border-top: 1px solid #e8e8e8;"></div>
+
+            <div class="content-section">
+                <h2>Luxury Fashion Campaign</h2>
+                
+                <div class="meta-info">
+                    <p><strong>Client:</strong> GIZIA</p>
+                    <p><strong>Industry:</strong> Luxury Fashion / Outerwear</p>
+                    <p><strong>Campaign Type:</strong> Seasonal / Product Launch</p>
+                    <p><strong>Target Audience:</strong> Luxury Fashion Consumers</p>
+                </div>
+
+                <div class="product-showcase">
+                    <div class="product-image-container" style="max-width: 800px; width: 100%;">
+                        <img src="https://static.ticimax.cloud/cdn-cgi/image/width=900/48221//uploads/dosyalar/brands-gizia-web-alt.jpg" 
+                             alt="GIZIA Brand Logo" 
+                             loading="lazy"
+                             style="width: 100%; height: auto; object-fit: contain; display: block;"
+                             onerror="this.onerror=null; this.src='https://static.ticimax.cloud/cdn-cgi/image/width=900/48221//uploads/dosyalar/brands-gizia-web-alt.jpg';">
+                    </div>
+                </div>
+
+                <p>
+                    These subject lines were crafted for <a href="https://shopgizia.com/" target="_blank" rel="noopener noreferrer" style="color: #1a1a1a; text-decoration: underline;">GIZIA</a>'s luxury outerwear campaign, focusing on sophisticated winter essentials. The top-performing line "It's Cold—Wrap Yourself in GIZIA" succeeded by combining immediate need (cold weather) with the brand name and a warm, inviting call to action. The direct, benefit-driven approach outperformed more abstract luxury messaging.
+                </p>
+
+                <h3>Subject Lines Performance</h3>
+                
+                <table class="subject-lines-table">
+                    <thead>
+                        <tr>
+                            <th>Subject Line</th>
+                            <th>Open Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-line-text">
+                                It's Cold—Wrap Yourself in GIZIA
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">44.6%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Keep Warm, Look Luxe—Wrap Yourself in GIZIA
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">36.1%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                GIZIA Presents Timeless Sophistication in Every Detail
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">35.2%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                GIZIA Signature Style: Sophisticated Hooded Outerwear
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">34.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Your Luxe Winter Essential: GIZIA Hooded Coat
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">33.9%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin: 96px 0; border-top: 1px solid #e8e8e8;"></div>
+
+            <div class="content-section">
+                <h2>Sports Nutrition & Supplements Campaign</h2>
+                
+                <div class="meta-info">
+                    <p><strong>Client:</strong> House of Supplements</p>
+                    <p><strong>Industry:</strong> Sports Nutrition / Supplements</p>
+                    <p><strong>Campaign Type:</strong> Product Collection / Performance</p>
+                    <p><strong>Target Audience:</strong> Athletes / Fitness Enthusiasts</p>
+                </div>
+
+                <div class="product-showcase">
+                    <div class="product-image-container">
+                        <img src="https://www.houseofsupplements.com.tr/wp-content/uploads/2021/08/BioTechUSA-L-Glutamine-240g.webp" 
+                             alt="BioTechUSA L-Glutamine - Amino Supplements" 
+                             loading="lazy"
+                             onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://www.houseofsupplements.com.tr/wp-content/uploads/2021/08/BioTechUSA-L-Glutamine-240g.webp&w=800';">
+                    </div>
+                </div>
+
+                <p>
+                    These subject lines were crafted for <a href="https://www.houseofsupplements.com.tr/" target="_blank" rel="noopener noreferrer" style="color: #1a1a1a; text-decoration: underline;">House of Supplements</a>' amino acid collection campaign, targeting athletes and fitness enthusiasts. The top-performing line "Fuel, Recover, Repeat" succeeded by creating a memorable, rhythmic pattern that speaks directly to the athlete's training cycle. Action-oriented, benefit-focused messaging resonated strongly with this performance-driven audience.
+                </p>
+
+                <h3>Subject Lines Performance</h3>
+                
+                <table class="subject-lines-table">
+                    <thead>
+                        <tr>
+                            <th>Subject Line</th>
+                            <th>Open Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-line-text">
+                                Fuel, Recover, Repeat – Top Aminos for Peak Performance
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">41.3%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Build, Burn, Recover – The Complete Amino Collection Awaits
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">37.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Maximize Muscle Growth with Our Elite Amino Lineup
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">36.4%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                The Science of Recovery: Top Amino Supplements
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">35.1%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Muscle, Energy, Power – All in One Amino Lineup
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">34.7%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin: 96px 0; border-top: 1px solid #e8e8e8;"></div>
+
+            <div class="content-section">
+                <div class="meta-info">
+                    <p><strong>Client:</strong> ladybirdco.ir</p>
+                    <p><strong>Industry:</strong> 3D Animation Services</p>
+                    <p><strong>Campaign Type:</strong> Promotional / Limited Offer</p>
+                </div>
+
+                <div class="product-showcase">
+                    <div class="product-image-container">
+                        <img src="https://ladybirdco.ir/img/services/leox.jpg" 
+                             alt="3D Animation Services" 
+                             loading="lazy"
+                             crossorigin="anonymous" 
+                             referrerpolicy="no-referrer"
+                             onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://ladybirdco.ir/img/services/leox.jpg';">
+                    </div>
+                </div>
+
+                <p>
+                    These subject lines were crafted for ladybirdco.ir's promotional campaigns, focusing on their competitive pricing for 3D animation services. Each line was designed to create urgency, highlight value, and cut through inbox clutter with clear, benefit-driven messaging.
+                </p>
+
+                <div class="info-box">
+                    <p><strong>Industry Benchmark:</strong> Average email open rate for marketing emails is typically 18-25%.</p>
+                    <p><strong>Excellent Performance:</strong> Open rates above 35% are considered exceptional in the industry.</p>
+                </div>
+
+                <h3>Subject Lines Performance</h3>
+                
+                <table class="subject-lines-table">
+                    <thead>
+                        <tr>
+                            <th>Subject Line</th>
+                            <th>Open Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-line-text">
+                                $2,000/Min Mid-Range 3D Animation – Limited Offer for Studios
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">42.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                $2,000/Min 3D Animation – No Joke, Seriously
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">41.2%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                80% Off Mid-Range 3D Animation – This Is Real
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">38.5%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Yes, We Can Animate It for $2,000/Min
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">36.9%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Your 3D Project, $2,000/Minute – Seriously
+                            </td>
+                            <td class="open-rate good" data-label="Open Rate">34.1%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin: 96px 0; border-top: 1px solid #e8e8e8;"></div>
+
+            <div class="content-section">
+                <h2>B2B Pool Maintenance Campaign</h2>
+                
+                <div class="meta-info">
+                    <p><strong>Client:</strong> MyDolphin.ae</p>
+                    <p><strong>Industry:</strong> Pool Cleaning Equipment / B2B Services</p>
+                    <p><strong>Campaign Type:</strong> Business Solutions / Cost Reduction</p>
+                    <p><strong>Target Audience:</strong> Pool Maintenance Companies / Facility Managers</p>
+                </div>
+
+                <div class="product-showcase">
+                    <div class="product-image-container">
+                        <img src="https://mydolphin.ae/wp-content/uploads/2023/10/12-1.jpg" 
+                             alt="Dolphin Robotic Pool Cleaner - MyDolphin.ae" 
+                             loading="lazy"
+                             onerror="this.style.display='none';">
+                    </div>
+                </div>
+
+                <p>
+                    These subject lines were crafted for <a href="https://mydolphin.ae/" target="_blank" rel="noopener noreferrer" style="color: #1a1a1a; text-decoration: underline;">MyDolphin.ae</a>'s B2B campaign targeting pool maintenance companies and facility managers. The "reduce" messaging proved highly effective, directly addressing the primary business concern: cost reduction. Lines focusing on labor cost savings significantly outperformed those with more abstract, future-focused messaging.
+                </p>
+
+                <h3>Subject Lines Performance</h3>
+                
+                <table class="subject-lines-table">
+                    <thead>
+                        <tr>
+                            <th>Subject Line</th>
+                            <th>Open Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="subject-line-text">
+                                Reduce Labor Costs with High-Capacity Pool Cleaning
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">43.2%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Reduce Expenses While Keeping Pools Pristine
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">41.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Reduce Labor, Maximize Pool Cleanliness
+                            </td>
+                            <td class="open-rate excellent" data-label="Open Rate">40.5%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                The Future of Pool Maintenance
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">32.4%</td>
+                        </tr>
+                        <tr>
+                            <td class="subject-line-text">
+                                Next-Level Pool Maintenance for Your Business
+                            </td>
+                            <td class="open-rate very-good" data-label="Open Rate">31.7%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

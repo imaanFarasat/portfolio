@@ -1,0 +1,52 @@
+Iman Farasat                                                    View Portfolio
+imaan.farasat@gmail.com | (437) 869-0604 | Toronto, ON
+
+
+Email Marketing Specialist & Strategist
+Results-driven Email Marketing Specialist & Strategist with proven expertise in Klaviyo and Shopify automation, mass email campaigns, and SMS marketing. Specialized in building custom automation workflows, responsive HTML email development, and data-driven revenue growth. B2C experience: Managed Klaviyo automation flows and mass email campaigns for consumer brands achieving 36.5% open rates (46% above industry standard) and generating consistent revenue. B2B experience: Managed email marketing for premium furniture platforms (HAY, &Tradition, GUBI, Ferm Living), optimized content for enterprise clients across GCC region, and implemented account-based marketing (ABM) strategies.
+WORK EXPERIENCE
+Email Marketing Specialist & Strategist
+ 
+rezagemcollection.ca                                                                                                         Apr 2024 - Present
+Migrated client websites from Square to Shopify, integrating Klaviyo for advanced email marketing and automation flows. Led platform migration including data preparation, cleansing, and migration of subscriber data, templates, and automation workflows. Utilized Shopify API to extract and sync customer data, product information, and order data for personalized email campaigns and automation triggers.
+Developed and executed long-term email marketing strategies and short-term campaign calendars focused on customer retention for jewelry makers, optimizing engagement and repeat purchases. Served as client-facing consultant, presenting strategies and campaign results to stakeholders.
+Managed email deliverability and sender reputation by creating comprehensive 'must-do' and 'avoid' checklists, ensuring high inbox placement and compliance with best practices. Configured email authentication (SPF, DKIM, DMARC) and implemented IP/domain warming plans.
+Crafted persuasive email copy and developed complete email campaigns, including automated flows tailored to customer behavior. Executed SMS and push notification campaigns, analyzing performance metrics across channels.
+Designed, executed, and optimized Klaviyo email automation flows such as welcome series, cart abandonment, and post-purchase sequences. Recreated and optimized audience segments, advanced segmentation, and lifecycle automation strategies.
+Created, monitored, and analyzed email campaigns, reporting performance metrics and insights to stakeholders. Analyzed email, SMS, and push notification performance metrics, providing actionable optimization recommendations.
+Managed customer segmentation in Klaviyo to optimize campaign targeting and increase engagement.
+Monitored email deliverability, resolving issues to maintain high inbox placement rates.
+Executed A/B testing on subject lines, content, and CTAs to maximize open and click-through rates.
+Ensured all email communications comply with CAN-SPAM, CASL, and GDPR regulations.
+
+Key Achievements - RezaGemCollection Project (Sept 1-15, 2025):
+Delivered exceptional open rates: 36.5% average (46% above industry standard of 20-25%).
+Achieved 2.1% average click-through rate (at industry standard).
+Maintained 3.2% average conversion rate (above industry standard of 2-5%).
+Managed 100+ email campaigns including product launches, promotional offers, and welcome sequences.
+
+
+Email Marketing Specialist | Agency & Freelance Projects            Jan 2023 - Apr2024
+MintMarket (Shopify) - Managed product listings and email marketing campaigns for curated digital marketplace, optimized product content for desktop and mobile performance, implemented modern design-focused product presentation, enhanced search functionality, and developed email campaigns with A/B testing to drive traffic and conversions. Client-facing role presenting campaign strategies and performance results.
+MintMarket (Shopify) – Managed Klaviyo email campaigns for curated digital marketplace, optimized content for desktop and mobile, implemented modern product presentation, and executed A/B testing to drive traffic and conversions.
+Velasca (Shopify) – Managed product catalog and Klaviyo email campaigns, optimized content for desktop and mobile, improved product discoverability, and created segmented campaigns for launches and seasonal promotions.
+The Bowery Company (Magento) – Managed product listings and Klaviyo email campaigns for premium Nordic/Scandinavian furniture collections, optimized B2C and B2B content.
+İç Giyim Perisi (E-Commerce Platform) – Managed product listings for Turkish lingerie platform, optimized product content for specialized collections, developed targeted campaigns with customer segmentation, and supported list-building initiatives.
+HyperTire (Custom Platform) – Managed product listings for automotive tire e-commerce, optimized content for vehicle-based selection and search, and improved discoverability for tire comparison and mobile installation services.
+
+Email Marketing Coordinator | Agency Client Work
+MTN Irancell (Agency Client)                                                                                              Aug 2021 - May 2023                                                                        Managed multiple client accounts, developing and executing responsive email marketing campaigns for MTN Irancell products, optimizing content for B2B and B2C channels. Led client-facing communications, presenting campaign strategies and results to marketing teams. Managed campaigns for product launches, promotions, and customer communications. Collaborated on email initiatives with Digikala, integrating product data and supporting AliExpress workflows to enhance customer engagement. Executed SMS campaigns and analyzed cross-channel performance metrics.
+
+
+TECHNICAL SKILLS
+Technical & Marketing Skills: Klaviyo, Shopify, Shopify API (data integration for email marketing), HTML & CSS, Responsive/table-based email design, Inline CSS, Media queries, Liquid, JavaScript, JSON for automation (n8n)
+Email Platforms: Klaviyo, Salesforce Marketing Cloud (SFMC), HubSpot, Pardot (SFMC Account Engagement), Braze, Mailchimp, Shopify Email, Drip, SendGrid
+Marketing & Analytics: A/B testing, Campaign analytics, CTR/Open rate analysis, Email/SMS/Push notification performance analysis, GA4, UTM tracking, Performance optimization
+Email Marketing Fundamentals: Campaign creation & deployment, Segmentation, Automation/workflows, Copywriting, Personalization, Lifecycle campaigns
+Testing & Quality: Cross-client testing (Litmus/Email on Acid), HTML validation, Spam & accessibility testing, AI-assisted code review. CAN-SPAM, CASL, GDPR, Consent & suppression management, Email security
+Tools & Technologies: Shopify, Cursor, Figma, Git/GitHub, Zapier, n8n, Make.com, Trello, Asana
+
+
+Education
+Bachelor of Management
+Azad University, Science and Research Branch

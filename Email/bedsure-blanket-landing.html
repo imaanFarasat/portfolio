@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedsure Blankets - Cozy Soft Fleece Throws for Ultimate Comfort</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            overflow-x: hidden;
+            background: #ffffff;
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 20px 0;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #3498db;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section - Professional Service Style */
+        .hero {
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0f8ff 100%);
+            color: #2c3e50;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            color: #2c3e50;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        .hero-content .description {
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            color: #5a6c7d;
+            line-height: 1.8;
+        }
+
+        .hero-image-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .hero-image-gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .hero-image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 20px;
+            background: #ffffff;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 60px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #3498db;
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            color: #5a6c7d;
+            line-height: 1.7;
+        }
+
+        /* Product Showcase */
+        .product-showcase {
+            padding: 100px 20px;
+            background: #f8f9fa;
+        }
+
+        .product-showcase-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .product-image-large {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .product-info {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .product-info h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+
+        .product-info p {
+            font-size: 1.1rem;
+            color: #5a6c7d;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .spec-list {
+            list-style: none;
+            margin-bottom: 35px;
+        }
+
+        .spec-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 1.05rem;
+            color: #5a6c7d;
+        }
+
+        .spec-list li:last-child {
+            border-bottom: none;
+        }
+
+        .spec-list li strong {
+            color: #3498db;
+            margin-right: 12px;
+            font-weight: 600;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #3498db;
+            margin-bottom: 25px;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .benefits-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .benefit-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .benefit-item p {
+            color: #5a6c7d;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.95rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-container,
+            .product-showcase-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-image-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                gap: 20px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Bedsure</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#specs">Specifications</a></li>
+                <li><a href="#buy">Shop Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Bedsure Blankets</h1>
+                <p class="subtitle">Queen Size GentleSoft Cozy Blankets</p>
+                <p class="description">
+                    Experience ultimate comfort with our premium fleece throws. Made with GentleSoft 
+                    technology, these cozy blankets are perfect for women and girls, offering warmth, 
+                    softness, and style for your bedroom or living space.
+                </p>
+                <a href="https://www.noon.com/uae-en/home-and-kitchen/bedsure/hanihua/htovila/nestl/?f[fulfillment][]=express%2F%2F%2F&f[item_condition][]=new" target="_blank" class="cta-button">Shop on Noon</a>
+            </div>
+            <div class="hero-image-gallery">
+                <img src="https://f.nooncdn.com/p/pzsku/Z9A4B7ED7A8C27A5D7E2…c16a933-3097-40f7-ab3e-64cbbde77ff7.jpg?width=800" alt="Bedsure Blanket">
+                <img src="https://f.nooncdn.com/p/pzsku/ZDB4D99C4677FB5DCD72EZ/45/1749128462/de45c8d9-d9b4-4cad-bab4-3b7e55bb11fc.jpg?width=800" alt="Bedsure Blanket Detail">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2 class="section-title">Why Choose Bedsure Blankets</h2>
+            <p class="section-subtitle">Premium Quality for Ultimate Comfort</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛏️</div>
+                    <h3>Queen Size</h3>
+                    <p>Generously sized to cover your entire bed or use as a large throw for maximum coverage and comfort.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>GentleSoft Technology</h3>
+                    <p>Ultra-soft fleece material that feels gentle against your skin, perfect for sensitive skin and all-day comfort.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌡️</div>
+                    <h3>Perfect Warmth</h3>
+                    <p>Optimal thickness provides warmth without being too heavy, keeping you cozy in any season.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👗</div>
+                    <h3>Designed for Women</h3>
+                    <p>Cute and stylish designs perfect for women and girls, adding a touch of elegance to any room.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧺</div>
+                    <h3>Easy Care</h3>
+                    <p>Machine washable and durable, maintaining softness and quality wash after wash.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Versatile Use</h3>
+                    <p>Perfect for bed, couch, or as a decorative throw. Great for bedrooms, living rooms, or guest rooms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="product-showcase" id="specs">
+        <div class="product-showcase-container">
+            <img src="https://f.nooncdn.com/p/pzsku/Z9A4B7ED7A8C27A5D7E2…c16a933-3097-40f7-ab3e-64cbbde77ff7.jpg?width=800" alt="Bedsure Blanket Queen Size" class="product-image-large">
+            <div class="product-info">
+                <h2>Product Specifications</h2>
+                <p>
+                    Our Bedsure blankets are crafted with attention to detail, ensuring premium quality 
+                    and lasting comfort for your home.
+                </p>
+                <ul class="spec-list">
+                    <li><strong>Size:</strong> Queen Size</li>
+                    <li><strong>Material:</strong> Premium Fleece</li>
+                    <li><strong>Technology:</strong> GentleSoft</li>
+                    <li><strong>Design:</strong> Cute & Stylish</li>
+                    <li><strong>Care:</strong> Machine Washable</li>
+                    <li><strong>Use:</strong> Bed, Couch, Throw</li>
+                    <li><strong>Target:</strong> Women & Girls</li>
+                    <li><strong>Quality:</strong> Premium Cozy</li>
+                </ul>
+                <div class="price">Shop Now</div>
+                <a href="https://www.noon.com/uae-en/home-and-kitchen/bedsure/hanihua/htovila/nestl/?f[fulfillment][]=express%2F%2F%2F&f[item_condition][]=new" target="_blank" class="cta-button" style="display: block; text-align: center;">View on Noon</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="benefits-container">
+            <h2 class="section-title">Perfect For</h2>
+            <p class="section-subtitle">Multiple Uses for Maximum Value</p>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3>Bedroom</h3>
+                    <p>Add an extra layer of warmth and comfort to your bed for a better night's sleep.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Living Room</h3>
+                    <p>Perfect throw blanket for your couch, keeping you cozy while watching TV or reading.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Guest Room</h3>
+                    <p>Provide your guests with premium comfort and a welcoming touch.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Decorative</h3>
+                    <p>Beautiful design adds style and elegance to any room decor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="buy">
+        <h2>Experience Ultimate Comfort</h2>
+        <p>Get your Bedsure GentleSoft blanket today and transform your home into a cozy haven</p>
+        <a href="https://www.noon.com/uae-en/home-and-kitchen/bedsure/hanihua/htovila/nestl/?f[fulfillment][]=express%2F%2F%2F&f[item_condition][]=new" target="_blank" class="cta-button" style="background: white; color: #3498db; border: 2px solid white;">Shop on Noon</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bedsure. All rights reserved. | Premium Home Comfort</p>
+    </footer>
+</body>
+</html>
+

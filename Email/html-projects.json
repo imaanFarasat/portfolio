@@ -1,0 +1,22 @@
+﻿[
+    {
+        "Name":  "codrops-scribbler",
+        "Path":  "codrops-scribbler",
+        "Type":  "HTML/CSS Only"
+    },
+    {
+        "Name":  "dev-landing-page",
+        "Path":  "dev-landing-page",
+        "Type":  "HTML/CSS Only"
+    },
+    {
+        "Name":  "Landing-Page",
+        "Path":  "Landing-Page",
+        "Type":  "HTML/CSS Only"
+    },
+    {
+        "Name":  "landing-page-boilerplate",
+        "Path":  "landing-page-boilerplate",
+        "Type":  "HTML/CSS Only"
+    }
+]

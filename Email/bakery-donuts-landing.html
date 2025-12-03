@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bakery Express - Fresh Donuts & Pastries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #2c1810;
+            overflow-x: hidden;
+            background: #fff8f0;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 248, 240, 0.98);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #d4a574;
+            letter-spacing: -1px;
+        }
+
+        .logo::before {
+            content: '🍩';
+            margin-right: 10px;
+            font-size: 1.8rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c1810;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #d4a574;
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: #d4a574;
+        }
+
+        /* Hero Section - Appetizing Restaurant Style */
+        .hero {
+            background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 50%, #ffd4a3 100%);
+            color: #2c1810;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 165, 116, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            line-height: 1.1;
+            color: #2c1810;
+            letter-spacing: -2px;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #d4a574;
+            font-weight: 600;
+        }
+
+        .hero-content .description {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            color: #5a4a3a;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #d4a574;
+            color: white;
+            padding: 18px 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            box-shadow: 0 8px 25px rgba(212, 165, 116, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(212, 165, 116, 0.5);
+            background: #c49564;
+        }
+
+        .donut-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .donut-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .donut-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(212, 165, 116, 0.3);
+        }
+
+        .donut-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            background: linear-gradient(135deg, #ffe8d6 0%, #ffd4a3 100%);
+        }
+
+        .donut-card-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .donut-card-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #2c1810;
+            font-weight: 700;
+        }
+
+        .donut-card-info p {
+            color: #5a4a3a;
+            font-size: 0.95rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3.2rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: #2c1810;
+            letter-spacing: -1px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #5a4a3a;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: #fff8f0;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid #ffe8d6;
+            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4a574;
+            box-shadow: 0 10px 30px rgba(212, 165, 116, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c1810;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            color: #5a4a3a;
+            line-height: 1.8;
+        }
+
+        /* Product Showcase */
+        .product-showcase {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #fff8f0 0%, #ffe8d6 100%);
+        }
+
+        .product-showcase-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .donut-showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 35px;
+            margin-top: 50px;
+        }
+
+        .showcase-item {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .showcase-item:hover {
+            transform: scale(1.05);
+        }
+
+        .showcase-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            background: linear-gradient(135deg, #ffe8d6 0%, #ffd4a3 100%);
+        }
+
+        /* Menu Section */
+        .menu {
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .menu-item {
+            background: #fff8f0;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid #ffe8d6;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            border-color: #d4a574;
+        }
+
+        .menu-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #2c1810;
+            font-weight: 700;
+        }
+
+        .menu-item p {
+            color: #5a4a3a;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #d4a574 0%, #c49564 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 3.2rem;
+            margin-bottom: 25px;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button-white {
+            display: inline-block;
+            background: white;
+            color: #d4a574;
+            padding: 18px 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .cta-button-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: #2c1810;
+            color: #d4a574;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .donut-gallery,
+            .donut-showcase-grid,
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                gap: 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">The Bakery Express</div>
+            <ul class="nav-links">
+                <li><a href="#donuts">Donuts</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Fresh Donuts</h1>
+                <p class="subtitle">Made Daily with Love</p>
+                <p class="description">
+                    Indulge in our handcrafted donuts made fresh every day. From classic flavors to 
+                    unique creations, we have something sweet for everyone. Visit us or order online 
+                    for the freshest donuts in town!
+                </p>
+                <a href="https://thebakeryexpress.ae/donuts/" target="_blank" class="cta-button">Order Donuts Now</a>
+            </div>
+            <div class="donut-gallery" id="donuts">
+                <div class="donut-card">
+                    <img src="https://thebakeryexpress.ae/wp-content/uploads/2020/06/CHOCOLATE-300x300.jpg" alt="Chocolate Donut" loading="eager" style="display: block; width: 100%; height: 250px; object-fit: cover;">
+                    <div class="donut-card-info">
+                        <h3>Chocolate Donut</h3>
+                        <p>Rich chocolate glaze</p>
+                    </div>
+                </div>
+                <div class="donut-card">
+                    <img src="https://thebakeryexpress.ae/wp-content/uploads/2020/06/PLAIN-300x300.jpg" alt="Plain Donut" loading="eager" style="display: block; width: 100%; height: 250px; object-fit: cover;">
+                    <div class="donut-card-info">
+                        <h3>Plain Donut</h3>
+                        <p>Classic simple flavor</p>
+                    </div>
+                </div>
+                <div class="donut-card">
+                    <img src="https://thebakeryexpress.ae/wp-content/uploads/2020/06/SUGAR-300x300.jpg" alt="Sugar Donut" loading="eager" style="display: block; width: 100%; height: 250px; object-fit: cover;">
+                    <div class="donut-card-info">
+                        <h3>Sugar Donut</h3>
+                        <p>Coated with sugar</p>
+                    </div>
+                </div>
+                <div class="donut-card">
+                    <img src="https://thebakeryexpress.ae/wp-content/uploads/2020/10/CHOCOLAT-VARMSEL-300x300.jpg" alt="Chocolate Varmsel Donut" loading="eager" style="display: block; width: 100%; height: 250px; object-fit: cover;">
+                    <div class="donut-card-info">
+                        <h3>Chocolate Varmsel</h3>
+                        <p>Special chocolate treat</p>
+                    </div>
+                </div>
+                <div class="donut-card">
+                    <img src="https://thebakeryexpress.ae/wp-content/uploads/2020/06/PLAIN-VERMAZS-300x300.jpg" alt="Plain Vermazs Donut" loading="eager" style="display: block; width: 100%; height: 250px; object-fit: cover;">
+                    <div class="donut-card-info">
+                        <h3>Plain Vermazs</h3>
+                        <p>Traditional favorite</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2 class="section-title">Why Choose Our Donuts</h2>
+            <p class="section-subtitle">Fresh, delicious, and made with premium ingredients</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🌅</span>
+                    <h3>Fresh Daily</h3>
+                    <p>Our donuts are made fresh every morning using the finest ingredients and traditional recipes.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">👨‍🍳</span>
+                    <h3>Handcrafted</h3>
+                    <p>Each donut is carefully crafted by our skilled bakers with attention to detail and quality.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🍩</span>
+                    <h3>Variety</h3>
+                    <p>Choose from classic flavors like chocolate, sugar, and plain, or try our special varieties.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">❤️</span>
+                    <h3>Made with Love</h3>
+                    <p>Every donut is made with passion and care, ensuring the perfect taste and texture.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🚚</span>
+                    <h3>Fast Delivery</h3>
+                    <p>Order online and get your fresh donuts delivered quickly to your doorstep.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⭐</span>
+                    <h3>Premium Quality</h3>
+                    <p>We use only the best ingredients to ensure every bite is a delightful experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="menu-container">
+            <h2 class="section-title">Our Donut Menu</h2>
+            <p class="section-subtitle">Choose your favorite flavor</p>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Chocolate Donut</h3>
+                    <p>Rich and creamy chocolate glaze on a fluffy donut base. Perfect for chocolate lovers!</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Plain Donut</h3>
+                    <p>Classic simple donut with a light, airy texture. A timeless favorite for all ages.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Sugar Donut</h3>
+                    <p>Sweet and satisfying, coated with fine sugar crystals. Simple yet delicious.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Chocolate Varmsel</h3>
+                    <p>Special chocolate variety with a unique twist. A must-try for adventurous taste buds.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Plain Vermazs</h3>
+                    <p>Traditional plain donut with a special touch. Perfect for those who love classic flavors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="order">
+        <h2>Ready to Order?</h2>
+        <p>Visit our website to browse our full menu and place your order for fresh, delicious donuts delivered to you!</p>
+        <a href="https://thebakeryexpress.ae/donuts/" target="_blank" class="cta-button-white">Order Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Bakery Express. All rights reserved. | Fresh Donuts Made Daily</p>
+    </footer>
+</body>
+</html>
+

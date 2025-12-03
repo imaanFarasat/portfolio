@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Technical Specifications Checklist - Email Quality Assurance</title>
+    <!--[if mso]>
+    <style type="text/css">
+        body, table, td {font-family: Arial, sans-serif !important;}
+    </style>
+    <![endif]-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            min-height: 100vh;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 
+                0 2px 4px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0.1),
+                0 16px 32px rgba(0, 0, 0, 0.1);
+            padding: 50px 40px;
+            position: relative;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #1976d2;
+            margin-bottom: 15px;
+            font-weight: 500;
+            letter-spacing: 0;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666666;
+            font-weight: 400;
+        }
+
+        .intro {
+            background: #fafafa;
+            border-left: 4px solid #1976d2;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            color: #424242;
+            line-height: 1.6;
+        }
+
+        .checklist-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #212121;
+            font-weight: 500;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .checklist-item {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .checklist-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .checklist-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            background: #4caf50;
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .checklist-title {
+            font-size: 18px;
+            color: #212121;
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .checklist-description {
+            font-size: 14px;
+            color: #757575;
+            margin-left: 36px;
+            line-height: 1.6;
+        }
+
+        .checklist-details {
+            margin-top: 12px;
+            margin-left: 36px;
+            padding: 12px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #424242;
+        }
+
+        .checklist-details ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .checklist-details li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .checklist-details li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1976d2;
+            font-weight: bold;
+        }
+
+        .priority-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-left: 10px;
+        }
+
+        .priority-high {
+            background: #ffebee;
+            color: #c62828;
+        }
+
+        .priority-medium {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .priority-low {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            color: #666666;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #1565c0;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .checklist-item {
+                padding: 15px;
+            }
+
+            .checklist-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Branding Header -->
+    <div style="background-color: #1a1a1a; padding: 10px 0; text-align: center; position: sticky; top: 0; z-index: 2000;">
+        <div style="font-size: 18px; font-weight: 600; color: #ffffff; letter-spacing: 1px; margin-bottom: 2px;">IMAN FARASAT</div>
+        <div style="font-size: 11px; color: #cccccc; letter-spacing: 0.5px;">Email Marketing Portfolio</div>
+    </div>
+    <!-- Navigation Bar -->
+    <div style="background-color: #1a1a1a; padding: 15px 0; text-align: center; position: sticky; top: 0; z-index: 1000;">
+        <a href="email_portfolio.html" style="display: inline-block; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 8px 20px; border: 1px solid #ffffff; border-radius: 4px; font-family: Arial, Helvetica, sans-serif;">← Back to Portfolio</a>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Technical Specifications</h1>
+            <p class="subtitle">Pre-Send Quality Assurance Checklist</p>
+        </div>
+
+        <div class="intro">
+            <p>Before sending any email campaign, I verify these technical specifications to ensure optimal deliverability, rendering, and performance across all email clients and devices.</p>
+        </div>
+
+        <div class="checklist-section">
+            <h2 class="section-title">Code Quality & Structure</h2>
+            
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">HTML Validation<span class="priority-badge priority-high">HIGH</span></div>
+                </div>
+                <div class="checklist-description">Validate HTML code through W3C Validator to ensure proper structure and compatibility.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>No unclosed tags or syntax errors</li>
+                        <li>Proper DOCTYPE declaration</li>
+                        <li>Valid HTML5 structure</li>
+                        <li>Semantic HTML where possible</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">Table-Based Layout<span class="priority-badge priority-high">HIGH</span></div>
+                </div>
+                <div class="checklist-description">Use table-based layout for maximum email client compatibility, especially for Outlook.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Tables for structure and layout</li>
+                        <li>Nested tables for complex designs</li>
+                        <li>Proper cellpadding and cellspacing</li>
+                        <li>Role="presentation" for layout tables</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">Inline CSS<span class="priority-badge priority-high">HIGH</span></div>
+                </div>
+                <div class="checklist-description">All CSS styles must be inline for maximum email client support.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>No external stylesheets</li>
+                        <li>All styles in style attributes</li>
+                        <li>Media queries in &lt;style&gt; tag (limited support)</li>
+                        <li>Fallback styles for unsupported properties</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="checklist-section">
+            <h2 class="section-title">File Size & Performance</h2>
+            
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">File Size Optimization<span class="priority-badge priority-high">HIGH</span></div>
+                </div>
+                <div class="checklist-description">Keep HTML file size under 100KB for optimal loading and deliverability.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Target: &lt; 100KB total file size</li>
+                        <li>Minimize whitespace and comments</li>
+                        <li>Remove unused code</li>
+                        <li>Optimize HTML structure</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">Image Optimization<span class="priority-badge priority-high">HIGH</span></div>
+                </div>
+                <div class="checklist-description">Optimize all images for web to reduce load time and improve performance.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Compress images (JPG/PNG)</li>
+                        <li>Appropriate image dimensions</li>
+                        <li>Use WebP with fallbacks (if supported)</li>
+                        <li>Lazy loading where applicable</li>
+                        <li>Alt text for all images</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="checklist-section">
+            <h2 class="section-title">Responsive Design</h2>
+            
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">Mobile Responsiveness<span class="priority-badge priority-high">HIGH</span></div>
+                </div>
+                <div class="checklist-description">Ensure emails render correctly on mobile devices with responsive design techniques.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Viewport meta tag included</li>
+                        <li>Media queries for mobile breakpoints</li>
+                        <li>Minimum width: 320px support</li>
+                        <li>Touch-friendly button sizes (44x44px minimum)</li>
+                        <li>Readable font sizes (14px+)</li>
+                        <li>Single column layout on mobile</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">Cross-Device Testing<span class="priority-badge priority-medium">MEDIUM</span></div>
+                </div>
+                <div class="checklist-description">Test email rendering across different devices and screen sizes.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Mobile (320px - 480px)</li>
+                        <li>Tablet (481px - 768px)</li>
+                        <li>Desktop (769px+)</li>
+                        <li>Test on actual devices when possible</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="checklist-section">
+            <h2 class="section-title">Email Client Compatibility</h2>
+            
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">Client-Specific Testing<span class="priority-badge priority-high">HIGH</span></div>
+                </div>
+                <div class="checklist-description">Test emails in major email clients to ensure proper rendering.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Gmail (Web, iOS, Android)</li>
+                        <li>Outlook (2016, 2019, 365, Web)</li>
+                        <li>Apple Mail (macOS, iOS)</li>
+                        <li>Yahoo Mail</li>
+                        <li>Thunderbird</li>
+                        <li>Known rendering issues documented</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">Outlook-Specific Fixes<span class="priority-badge priority-medium">MEDIUM</span></div>
+                </div>
+                <div class="checklist-description">Apply Outlook-specific workarounds for known rendering issues.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Conditional comments for Outlook</li>
+                        <li>MSO-specific styles</li>
+                        <li>VML for background images (if needed)</li>
+                        <li>Avoid unsupported CSS properties</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="checklist-section">
+            <h2 class="section-title">Accessibility & Standards</h2>
+            
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">Alt Text & Accessibility<span class="priority-badge priority-high">HIGH</span></div>
+                </div>
+                <div class="checklist-description">Ensure emails are accessible to all users, including those using screen readers.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Descriptive alt text on all images</li>
+                        <li>Color contrast ratios (WCAG AA: 4.5:1)</li>
+                        <li>Readable font sizes (minimum 14px)</li>
+                        <li>Descriptive link text (not "click here")</li>
+                        <li>Text readable without images</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">CAN-SPAM Compliance<span class="priority-badge priority-high">HIGH</span></div>
+                </div>
+                <div class="checklist-description">Ensure emails comply with CAN-SPAM Act requirements.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Unsubscribe link included and visible</li>
+                        <li>Physical mailing address</li>
+                        <li>Accurate sender information</li>
+                        <li>Clear identification as advertisement (if applicable)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="checklist-section">
+            <h2 class="section-title">Deliverability & Best Practices</h2>
+            
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">Spam Score Check<span class="priority-badge priority-medium">MEDIUM</span></div>
+                </div>
+                <div class="checklist-description">Review email content to avoid spam trigger words and improve deliverability.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Avoid excessive use of spam trigger words</li>
+                        <li>Proper text-to-image ratio</li>
+                        <li>No excessive capitalization</li>
+                        <li>Proper link formatting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="checklist-header">
+                    <div class="check-icon">✓</div>
+                    <div class="checklist-title">Plain Text Version<span class="priority-badge priority-medium">MEDIUM</span></div>
+                </div>
+                <div class="checklist-description">Provide plain text version for email clients that don't support HTML.</div>
+                <div class="checklist-details">
+                    <ul>
+                        <li>Plain text version available</li>
+                        <li>Same content as HTML version</li>
+                        <li>Properly formatted links</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Technical Quality Assurance Process | <a href="email_portfolio.html">← Back to Portfolio</a></p>
+            <p style="margin-top: 10px; font-size: 12px;">All emails undergo this comprehensive checklist before deployment</p>
+        </div>
+    </div>
+</body>
+</html>
+

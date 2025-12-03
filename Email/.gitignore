@@ -30,11 +30,3 @@ npm-debug.log*
 *.tmp
 *.temp
 
-"*.pickle" 
-"token*.pickle" 
-"*.pickle" 
-"token*.pickle" 
-"product-automation/token*.pickle" 
-"*.pickle" 
-"~$*" 
-"*.tmp" 

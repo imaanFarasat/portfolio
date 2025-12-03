@@ -1,0 +1,877 @@
+{
+  "klaviyo_templates": {
+    "email_campaign_template": {
+      "name": "Klaviyo Email Campaign Template",
+      "file": "klaviyo-campaign-template.html",
+      "sections": 7,
+      "metrics": {
+        "campaign_overview": {
+          "campaign_name": "Text input",
+          "objective": "Select: Increase Open Rate, Boost CTR, Drive Conversions, Increase Revenue, Improve Engagement",
+          "target_audience": "Textarea",
+          "send_date_time": "Date and time input",
+          "sender_name_email": "Text and email inputs"
+        },
+        "content_details": {
+          "subject_line": "Text input",
+          "preheader_text": "Text input",
+          "main_copy": "Textarea",
+          "cta": "Text input",
+          "images_media": "Textarea"
+        },
+        "personalization_segmentation": {
+          "dynamic_content": "Textarea",
+          "segmentation_criteria": "Textarea"
+        },
+        "design_layout": {
+          "template_used": "Text input",
+          "layout_details": "Textarea"
+        },
+        "testing_optimization": {
+          "ab_tests": "Textarea",
+          "performance_metrics": "Textarea"
+        },
+        "review_approval": {
+          "content_review": "Textarea",
+          "approval_process": "Textarea"
+        },
+        "post_campaign_analysis": {
+          "reporting": "Textarea",
+          "learnings_next_steps": "Textarea"
+        }
+      }
+    },
+    "flow_planning_template": {
+      "name": "Klaviyo Flow Planning Template",
+      "file": "klaviyo-flow-planning-template.html",
+      "sections": 10,
+      "metrics": {
+        "flow_overview": {
+          "flow_name": "Text input",
+          "goal_purpose": "Text input",
+          "flow_type": "Select: Welcome, Abandoned Cart, Browse Abandonment, Post-Purchase, Re-Engagement, Win-Back",
+          "start_trigger": "Textarea",
+          "additional_filters": "Textarea",
+          "target_segment": "Text input"
+        },
+        "flow_map": {
+          "step_by_step_table": {
+            "columns": ["Step #", "Action Type", "Timing", "Description", "Conditions"],
+            "action_types": ["Email", "SMS", "Conditional Split", "Delay"]
+          }
+        },
+        "email_sms_content": {
+          "email_sms_1": {
+            "goal": "Text input",
+            "subject_line": "Text input",
+            "preheader": "Text input",
+            "main_message_summary": "Textarea",
+            "cta": "Text input",
+            "personalization_elements": "Textarea",
+            "ab_test_planned": "Select: No, Yes - Subject Line, Yes - CTA, Yes - Content, Yes - Other"
+          }
+        },
+        "segmentation_logic": {
+          "trigger_filters": "Textarea",
+          "flow_filters": "Textarea",
+          "conditional_splits": "Textarea"
+        },
+        "delays_timing": {
+          "overall_timing_approach": "Textarea",
+          "delay_before_first_email": "Text input",
+          "delay_between_steps": "Text input"
+        },
+        "creative_assets": {
+          "checklist": [
+            "Header images",
+            "Product blocks (dynamic)",
+            "Buttons & CTAs",
+            "Branding elements",
+            "GIFs (if used)",
+            "Social links"
+          ]
+        },
+        "quality_assurance": {
+          "technical": [
+            "Trigger works",
+            "Filters correct",
+            "All dynamic tags tested",
+            "Links tested",
+            "Mobile preview",
+            "Desktop preview"
+          ],
+          "content": [
+            "Grammar",
+            "Brand tone",
+            "Subject lines optimized",
+            "CTA clear",
+            "No spam-trigger words"
+          ]
+        },
+        "kpi_expectations": {
+          "open_rate_target": "Text input (percentage)",
+          "ctr_target": "Text input (percentage)",
+          "conversion_rate_target": "Text input (percentage)",
+          "revenue_per_recipient_goal": "Text input (currency)"
+        },
+        "post_launch_monitoring": {
+          "deliverability": "Text input (percentage)",
+          "open_rate": "Text input (percentage)",
+          "click_through_rate": "Text input (percentage)",
+          "sales_revenue": "Text input (currency)",
+          "unsubscribes": "Text input (percentage)",
+          "spam_complaints": "Text input (percentage)"
+        },
+        "optimization_notes": {
+          "what_worked": "Textarea",
+          "what_needs_improvement": "Textarea",
+          "future_ab_test_ideas": "Textarea"
+        }
+      }
+    },
+    "segmentation_template": {
+      "name": "Klaviyo Segmentation Template",
+      "file": "klaviyo-segmentation-template.html",
+      "sections": 7,
+      "metrics": {
+        "segment_overview": {
+          "segment_name": "Text input",
+          "purpose_goal": "Text input",
+          "where_used": "Checkboxes: Campaign, Flow, SMS, Ads"
+        },
+        "segmentation_criteria": {
+          "behavioral_data": {
+            "added_to_cart": "Checkbox",
+            "viewed_product": "Checkbox",
+            "viewed_category": "Checkbox",
+            "started_checkout": "Checkbox",
+            "purchased_x_times": "Checkbox with number input",
+            "last_active_x_days": "Checkbox with number input",
+            "browsed_at_least_3_products": "Checkbox"
+          },
+          "transactional_data": {
+            "total_orders": "Checkbox with number input",
+            "aov": "Checkbox with currency input",
+            "high_value_customers_top_20": "Checkbox",
+            "one_time_buyers": "Checkbox",
+            "repeat_buyers": "Checkbox",
+            "has_used_discount_code": "Checkbox with Yes/No select",
+            "has_returned_items": "Checkbox"
+          },
+          "engagement_data": {
+            "opened_email_last_30_days": "Checkbox",
+            "clicked_email_last_30_days": "Checkbox",
+            "sms_engaged": "Checkbox",
+            "sms_unengaged": "Checkbox",
+            "email_unengaged_60_90_days": "Checkbox"
+          },
+          "demographic_filters": {
+            "location": "Text input",
+            "language": "Text input",
+            "time_zone": "Text input",
+            "gender": "Select: Not applicable, Male, Female, Other"
+          },
+          "shopify_custom_data": {
+            "tags": "Text input",
+            "customer_account_created": "Checkbox",
+            "guest_checkout": "Checkbox",
+            "subscription_status": "Select: Not applicable, Active subscriber, Inactive subscriber, No subscription"
+          }
+        },
+        "build_rules": {
+          "rules_text": "Textarea for Klaviyo UI or JSON rules"
+        },
+        "exclusion_rules": {
+          "exclude_unsubscribed": "Checkbox",
+          "exclude_suppressed": "Checkbox",
+          "exclude_bounced_emails": "Checkbox",
+          "exclude_disengaged_60_180_days": "Checkbox",
+          "exclude_sms_unconsented": "Checkbox"
+        },
+        "validation_checklist": {
+          "segment_size_correct": "Checkbox",
+          "rules_match_goal": "Checkbox",
+          "exclusions_correct": "Checkbox",
+          "avoiding_overlapping_segments": "Checkbox",
+          "tested_with_sample_profiles": "Checkbox"
+        },
+        "kpis_for_segment": {
+          "target_open_rate": "Text input (percentage)",
+          "target_click_rate": "Text input (percentage)",
+          "target_conversion_rate": "Text input (percentage)",
+          "revenue_per_recipient": "Text input (currency)",
+          "engagement_lift": "Text input (percentage or description)"
+        },
+        "notes_insights": {
+          "why_valuable": "Textarea",
+          "refresh_frequency": "Text input",
+          "future_optimizations": "Textarea"
+        }
+      }
+    },
+    "success_measurement_template": {
+      "name": "Success Measurement Template",
+      "file": "klaviyo-success-measurement-template.html",
+      "sections": 7,
+      "metrics": {
+        "campaign_flow_overview": {
+          "campaign_flow_name": "Text input",
+          "type": "Select: Welcome, Abandoned Cart, Re-Engagement, Promotional, Newsletter",
+          "launch_date": "Date and time input",
+          "goal_objective": "Textarea"
+        },
+        "key_metrics_to_track": {
+          "engagement_metrics": {
+            "open_rate_percent": "Text input - % of recipients who opened the email",
+            "click_through_rate_ctr_percent": "Text input - % of recipients who clicked a link or CTA",
+            "click_to_open_rate_ctor_percent": "Text input - CTR ÷ Open Rate",
+            "bounce_rate_percent": "Text input - % of emails not delivered",
+            "unsubscribe_rate_percent": "Text input - % of users who unsubscribed"
+          },
+          "conversion_metrics": {
+            "conversion_rate_percent": "Text input - % of recipients who completed the desired action",
+            "revenue_per_recipient_rpr": "Text input - Total revenue ÷ total recipients",
+            "average_order_value_aov": "Text input - Average purchase amount per order",
+            "total_sales_revenue_generated": "Text input - Total sales/revenue"
+          },
+          "sms_specific_metrics": {
+            "delivered_sms_percent": "Text input - % delivered successfully",
+            "sms_click_rate_percent": "Text input - % of recipients who clicked links in SMS",
+            "conversion_rate_from_sms_percent": "Text input - % of SMS recipients who converted"
+          }
+        },
+        "segmentation_performance": {
+          "segment_name": "Text input",
+          "size_of_segment": "Text input",
+          "performance_vs_overall_audience": "Textarea",
+          "insights": "Textarea"
+        },
+        "hypotheses_expected_outcomes": {
+          "what_expected": "Textarea",
+          "reasoning_logic": "Textarea"
+        },
+        "actual_results": {
+          "open_rate": "Text input",
+          "ctr": "Text input",
+          "conversion_rate": "Text input",
+          "revenue_per_recipient": "Text input",
+          "unsubscribe_rate": "Text input",
+          "notes_anomalies": "Text input"
+        },
+        "insights_recommendations": {
+          "elements_worked_best": "Textarea - subject line, CTA, personalization, send time",
+          "elements_underperformed": "Textarea",
+          "recommendations_next_campaign": "Textarea",
+          "ab_testing_ideas": "Textarea"
+        },
+        "post_campaign_actions": {
+          "save_winning_content": "Checkbox",
+          "apply_insights_to_future_flows": "Checkbox",
+          "update_segmentation_triggers": "Checkbox",
+          "additional_actions_notes": "Textarea"
+        }
+      }
+    },
+    "email_reputation_deliverability_template": {
+      "name": "Email Reputation & Deliverability Template",
+      "file": "klaviyo-reputation-deliverability-template.html",
+      "sections": 5,
+      "metrics": {
+        "campaign_flow_overview": {
+          "campaign_flow_name": "Text input",
+          "type": "Select: Welcome, Abandoned Cart, Newsletter, Promotional",
+          "launch_date": "Date and time input",
+          "goal_objective": "Textarea"
+        },
+        "key_deliverability_reputation_metrics": {
+          "sending_performance": {
+            "sent_emails": "Number input - Total number of emails sent",
+            "delivered_emails": "Number input - Total number successfully delivered",
+            "delivery_rate_percent": "Text input - (Delivered ÷ Sent) × 100",
+            "bounce_rate_percent": "Text input - (Bounced ÷ Sent) × 100",
+            "hard_bounces_percent": "Text input - Invalid emails",
+            "soft_bounces_percent": "Text input - Temporary delivery failures"
+          },
+          "engagement_metrics": {
+            "open_rate_percent": "Text input - (Opened ÷ Delivered) × 100",
+            "click_through_rate_ctr_percent": "Text input - (Clicked ÷ Delivered) × 100",
+            "click_to_open_rate_ctor_percent": "Text input - (Clicked ÷ Opened) × 100"
+          },
+          "sender_reputation_metrics": {
+            "spam_complaint_rate_percent": "Text input - (Complaints ÷ Delivered) × 100",
+            "unsubscribe_rate_percent": "Text input - (Unsubscribes ÷ Delivered) × 100",
+            "inbox_placement_rate_percent": "Text input - % of emails landing in inbox vs. spam/junk",
+            "domain_ip_reputation": "Textarea - Check DKIM, SPF, DMARC alignment, and IP status"
+          },
+          "list_health_metrics": {
+            "active_subscribers": "Number input - Number of engaged users (opened or clicked in last X days)",
+            "inactive_unengaged_subscribers": "Number input - Number of users not opening/clicking emails in last X days",
+            "suppressed_emails": "Number input - Emails blocked by platform due to bounces, complaints, or unsubscribes"
+          },
+          "revenue_conversions": {
+            "conversion_rate_percent": "Text input - (Completed Action ÷ Delivered) × 100",
+            "revenue_per_recipient_rpr": "Text input - Total Revenue ÷ Total Delivered",
+            "revenue_per_click_rpc": "Text input - Total Revenue ÷ Total Clicks"
+          }
+        },
+        "monitoring_frequency": {
+          "daily": "Textarea - Monitor delivery, bounce, spam complaints",
+          "weekly": "Textarea - Open rate, CTR, engagement trends",
+          "monthly": "Textarea - Revenue per recipient, inactive subscriber cleanup"
+        },
+        "action_plan_troubleshooting": {
+          "bounce_rate_above_2_percent": "Textarea - Clean email list, verify addresses",
+          "spam_complaint_above_0_1_percent": "Textarea - Review content, subject lines, and frequency",
+          "open_rate_below_benchmark": "Textarea - Test subject lines, sending times, and personalization",
+          "inbox_placement_below_95_percent": "Textarea - Check DKIM/SPF/DMARC, remove bad IPs, segment engaged users"
+        },
+        "notes_observations": {
+          "special_observations": "Textarea - Special observations, trends, or issues",
+          "seasonal_anomalies": "Textarea - Seasonal or campaign-specific anomalies"
+        }
+      }
+    },
+    "email_marketing_compliance_template": {
+      "name": "Email Marketing Compliance & Rules Template",
+      "file": "klaviyo-compliance-rules-template.json",
+      "sections": 7,
+      "metrics": {
+        "campaign_overview": {
+          "campaign_flow_name": "Text input",
+          "type": "Select: Welcome, Abandoned Cart, Newsletter, Promotional",
+          "launch_date": "Date and time input",
+          "goal_objective": "Textarea"
+        },
+        "legal_compliance_checks": {
+          "can_spam_usa": {
+            "accurate_from_name_email": "Checkbox - Accurate 'From' name and email address",
+            "subject_line_not_misleading": "Checkbox - Subject line is not misleading",
+            "physical_mailing_address_footer": "Checkbox - Physical mailing address included in footer",
+            "clear_functional_unsubscribe": "Checkbox - Clear and functional unsubscribe link",
+            "no_harvesting_deceptive": "Checkbox - No harvesting or deceptive practices"
+          },
+          "casl_canada": {
+            "explicit_consent_obtained": "Checkbox - Explicit consent obtained from recipients",
+            "unsubscribe_mechanism_easy": "Checkbox - Unsubscribe mechanism easy and functional",
+            "sender_company_identification": "Checkbox - Identification of sender company",
+            "recordkeeping_of_consent": "Checkbox - Recordkeeping of consent"
+          },
+          "gdpr_eu": {
+            "consent_collected_recorded": "Checkbox - Consent collected and recorded",
+            "subscribers_access_delete_data": "Checkbox - Subscribers can access / delete their data",
+            "privacy_policy_link": "Checkbox - Privacy policy link included",
+            "clear_purpose_data_usage": "Checkbox - Clear purpose of data usage stated"
+          }
+        },
+        "list_hygiene": {
+          "no_purchased_rented_lists": "Checkbox - No purchased or rented lists",
+          "regularly_clean_inactive_bounced": "Checkbox - Regularly clean inactive or bounced emails",
+          "segment_engaged_unengaged": "Checkbox - Segment engaged vs unengaged subscribers",
+          "suppressed_unsubscribed_excluded": "Checkbox - Suppressed / unsubscribed emails excluded"
+        },
+        "content_compliance": {
+          "subject_line_reflects_content": "Checkbox - Subject line reflects email content",
+          "avoid_spammy_words_all_caps": "Checkbox - Avoid spammy words or all caps",
+          "clear_cta_no_misleading": "Checkbox - Clear CTA without misleading promises",
+          "proper_branding_copyright": "Checkbox - Proper branding and copyright compliance"
+        },
+        "frequency_timing": {
+          "send_frequency_aligns_expectations": "Checkbox - Send frequency aligns with subscriber expectations",
+          "timezone_optimal_sending": "Checkbox - Time zone and optimal sending time considered",
+          "campaign_schedule_prevents_fatigue": "Checkbox - Campaign schedule prevents subscriber fatigue"
+        },
+        "reporting_monitoring": {
+          "open_rate_ctr_bounce_spam_tracked": "Checkbox - Open rate, CTR, bounce, and spam complaints tracked",
+          "segment_performance_monitored": "Checkbox - Segment performance monitored",
+          "campaign_adjustments_documented": "Checkbox - Campaign adjustments documented",
+          "compliance_issues_resolved": "Checkbox - Compliance issues resolved promptly"
+        },
+        "notes_observations": {
+          "special_legal_requirements": "Textarea - Special legal requirements per region",
+          "lessons_learned": "Textarea - Lessons learned for future campaigns",
+          "flagged_content_errors": "Textarea - Any flagged content or errors"
+        }
+      }
+    },
+    "content_copy_checklist_template": {
+      "name": "Content / Copy Checklist Template",
+      "file": "klaviyo-content-copy-checklist-template.json",
+      "sections": 7,
+      "metrics": {
+        "campaign_overview": {
+          "campaign_flow_name": "Text input",
+          "type": "Select: Welcome, Abandoned Cart, Newsletter, Promotional, Re-Engagement",
+          "launch_date": "Date and time input",
+          "goal_objective": "Textarea",
+          "target_segment": "Text input",
+          "sender_name_email": "Text and email inputs"
+        },
+        "subject_line_preheader": {
+          "subject_line_clear_concise": "Checkbox - Subject line is clear, concise, and aligned with goal",
+          "preheader_complements_subject": "Checkbox - Preheader complements subject line",
+          "no_spammy_words_punctuation": "Checkbox - No spammy words / excessive punctuation",
+          "personalization_tested": "Checkbox - Personalization tested (e.g., {{ first_name }})",
+          "length_optimized_mobile": "Checkbox - Length optimized for mobile"
+        },
+        "body_content": {
+          "main_message_aligned_goal": "Checkbox - Main message aligned with campaign goal",
+          "clear_persuasive_copy": "Checkbox - Clear, persuasive copy",
+          "dynamic_content_personalized": "Checkbox - Dynamic content personalized for recipient",
+          "key_benefits_offers_highlighted": "Checkbox - Key benefits / offers highlighted",
+          "cta_present_visible": "Checkbox - CTA present and clearly visible",
+          "formatting_correct": "Checkbox - Formatting (headings, bullets, spacing) correct",
+          "grammar_spelling_checked": "Checkbox - Grammar and spelling checked",
+          "emojis_used_appropriately": "Checkbox - Emojis (if any) used appropriately"
+        },
+        "images_media": {
+          "images_optimized_size": "Checkbox - Images optimized for size and load speed",
+          "alt_text_provided": "Checkbox - Alt text provided for all images",
+          "images_render_desktop_mobile": "Checkbox - Images render correctly on desktop & mobile",
+          "gifs_videos_tested": "Checkbox - GIFs or videos tested",
+          "branding_consistency": "Checkbox - Branding consistency (logo, colors, fonts)"
+        },
+        "cta_buttons": {
+          "clear_actionable_text": "Checkbox - Clear and actionable text",
+          "linked_correct_landing_page": "Checkbox - Linked to correct landing page",
+          "tracked_utm_parameters": "Checkbox - Tracked with UTM parameters (if needed)",
+          "mobile_friendly_sizing_placement": "Checkbox - Mobile-friendly sizing & placement"
+        },
+        "legal_compliance": {
+          "unsubscribe_link_present_working": "Checkbox - Unsubscribe link present and working",
+          "company_address_footer": "Checkbox - Company address included in footer",
+          "privacy_policy_link": "Checkbox - Privacy policy link included",
+          "can_spam_casl_gdpr_checked": "Checkbox - CAN-SPAM / CASL / GDPR compliance checked"
+        },
+        "testing": {
+          "inbox_preview_gmail_outlook_apple": "Checkbox - Inbox preview on Gmail, Outlook, Apple Mail",
+          "mobile_preview_ios_android": "Checkbox - Mobile preview on iOS & Android",
+          "dynamic_content_tags_tested": "Checkbox - Dynamic content tags tested",
+          "links_tested": "Checkbox - Links tested",
+          "render_testing_images_media": "Checkbox - Render testing on images & media"
+        },
+        "final_approval": {
+          "reviewed_by": "Text input",
+          "approved_by": "Text input",
+          "notes_special_instructions": "Textarea"
+        }
+      }
+    },
+    "campaign_post_mortem_template": {
+      "name": "Campaign Post-Mortem Template",
+      "file": "klaviyo-campaign-post-mortem-template.json",
+      "sections": 6,
+      "metrics": {
+        "campaign_overview": {
+          "campaign_flow_name": "Text input",
+          "type": "Select: Welcome, Abandoned Cart, Newsletter, Promotional, Re-Engagement",
+          "launch_date": "Date and time input",
+          "goal_objective": "Textarea",
+          "target_segment": "Text input",
+          "sender_name_email": "Text and email inputs"
+        },
+        "key_performance_metrics": {
+          "delivery_reputation": {
+            "emails_sent": "Number input",
+            "emails_delivered": "Number input",
+            "delivery_rate_percent": "Text input (percentage)",
+            "hard_bounce_rate_percent": "Text input (percentage)",
+            "soft_bounce_rate_percent": "Text input (percentage)",
+            "spam_complaint_rate_percent": "Text input (percentage)",
+            "unsubscribe_rate_percent": "Text input (percentage)"
+          },
+          "engagement": {
+            "open_rate_percent": "Text input (percentage)",
+            "click_through_rate_ctr_percent": "Text input (percentage)",
+            "click_to_open_rate_ctor_percent": "Text input (percentage)",
+            "email_forwards_shares": "Text input"
+          },
+          "conversions_revenue": {
+            "conversion_rate_percent": "Text input (percentage)",
+            "revenue_per_recipient_rpr": "Text input (currency)",
+            "average_order_value_aov": "Text input (currency)",
+            "total_revenue_generated": "Text input (currency)"
+          }
+        },
+        "segmentation_performance": {
+          "segment_name": "Text input",
+          "segment_size": "Number input",
+          "performance_vs_overall_audience": "Textarea"
+        },
+        "analysis": {
+          "what_worked_well": "Textarea",
+          "what_underperformed": "Textarea",
+          "subject_line_preheader_analysis": "Textarea",
+          "cta_performance": "Textarea",
+          "timing_send_day_impact": "Textarea",
+          "images_media_impact": "Textarea",
+          "engagement_trends_by_segment": "Textarea"
+        },
+        "technical_deliverability_notes": {
+          "issues_encountered": "Textarea - Bounces, spam complaints, rendering",
+          "ip_domain_reputation_notes": "Textarea",
+          "list_health_impact": "Textarea",
+          "unsubscribe_suppression_issues": "Textarea"
+        },
+        "learnings_recommendations": {
+          "ab_testing_insights": "Textarea - A/B testing insights for future campaigns",
+          "copy_design_improvements": "Textarea",
+          "segment_refinement_suggestions": "Textarea",
+          "optimal_send_time_frequency": "Textarea - Optimal send time / frequency adjustments",
+          "compliance_deliverability_adjustments": "Textarea"
+        },
+        "next_steps": {
+          "update_templates_flows": "Checkbox",
+          "apply_insights_next_campaigns": "Checkbox",
+          "document_lessons_learned": "Checkbox - Document lessons learned in knowledge base",
+          "test_new_ideas_campaigns": "Checkbox"
+        }
+      }
+    },
+    "ecommerce_strategic_foundation_template": {
+      "name": "E-commerce Strategic Foundation Template",
+      "file": "klaviyo-ecommerce-strategic-foundation-template.json",
+      "sections": 4,
+      "metrics": {
+        "brand_product_strategy": {
+          "brand_positioning_voice": {
+            "brand_mission_values": "Textarea",
+            "brand_voice_tone_guidelines": "Textarea",
+            "brand_personality_traits": "Select: Professional, Friendly, Playful, Luxurious, Minimalist, Bold, Quirky, Sophisticated, Approachable, Edgy, Other",
+            "key_messaging_pillars": "Textarea",
+            "brand_differentiators": "Textarea",
+            "brand_story_narrative": "Textarea"
+          },
+          "product_catalog_analysis": {
+            "total_skus": "Number input",
+            "product_categories": "Textarea - List all categories",
+            "price_range": {
+              "low_price": "Number input (currency)",
+              "mid_price": "Number input (currency)",
+              "high_price": "Number input (currency)"
+            },
+            "bestsellers": "Textarea - Top 10-20 products",
+            "new_product_launches": {
+              "frequency": "Select: Weekly, Bi-weekly, Monthly, Quarterly, Seasonal, As needed",
+              "upcoming_launches": "Textarea"
+            },
+            "seasonal_products": "Textarea",
+            "clearance_outlet_items": "Textarea",
+            "product_bundles_packages": "Textarea",
+            "subscription_products": "Select: Yes, No, Planning",
+            "product_storytelling_angles": "Textarea - Per category"
+          },
+          "product_lifecycle_strategy": {
+            "new_product_launch_strategy": "Textarea",
+            "bestseller_promotion_strategy": "Textarea",
+            "slow_moving_inventory_strategy": "Textarea",
+            "clearance_end_of_season_strategy": "Textarea",
+            "cross_sell_opportunities": "Textarea - Product pairs",
+            "upsell_opportunities": "Textarea - Premium versions",
+            "product_storytelling_angles_per_category": "Textarea"
+          },
+          "seasonal_promotional_calendar": {
+            "key_shopping_seasons": "Textarea - Holidays, events",
+            "product_launch_calendar": "Textarea",
+            "sale_promotion_schedule": "Textarea",
+            "inventory_clearance_periods": "Textarea",
+            "seasonal_events": "Select: Back-to-School, Black Friday, Cyber Monday, Holiday Season, Valentine's Day, Mother's Day, Father's Day, Summer Sale, New Year, Spring Collection, Fall Collection, Winter Collection, Other"
+          }
+        },
+        "target_audience_personas": {
+          "primary_customer_personas": {
+            "persona_1": {
+              "persona_name": "Text input",
+              "demographics": {
+                "age_range": "Select: 18-24, 25-34, 35-44, 45-54, 55-64, 65+",
+                "gender": "Select: Male, Female, Non-binary, All",
+                "location": "Text input",
+                "income_level": "Select: Low, Middle, Upper-middle, High, Not specified"
+              },
+              "psychographics": {
+                "interests": "Textarea",
+                "values": "Textarea",
+                "lifestyle": "Textarea"
+              },
+              "shopping_behavior": {
+                "frequency": "Select: Daily, Weekly, Bi-weekly, Monthly, Quarterly, Seasonal",
+                "preferred_channels": "Select: Email, SMS, Social Media, Website, Mobile App, In-store, All",
+                "device_preference": "Select: Desktop, Mobile, Tablet, All"
+              },
+              "product_preferences": {
+                "categories": "Textarea",
+                "price_sensitivity": "Select: Very price-sensitive, Somewhat price-sensitive, Price-neutral, Premium-focused, Luxury-focused"
+              },
+              "pain_points_motivations": "Textarea",
+              "email_engagement_patterns": "Textarea",
+              "preferred_communication_style": "Select: Formal, Casual, Friendly, Professional, Playful, Minimal, Detailed"
+            },
+            "persona_2": {
+              "persona_name": "Text input",
+              "demographics": {
+                "age_range": "Select: 18-24, 25-34, 35-44, 45-54, 55-64, 65+",
+                "gender": "Select: Male, Female, Non-binary, All",
+                "location": "Text input",
+                "income_level": "Select: Low, Middle, Upper-middle, High, Not specified"
+              },
+              "psychographics": {
+                "interests": "Textarea",
+                "values": "Textarea",
+                "lifestyle": "Textarea"
+              },
+              "shopping_behavior": {
+                "frequency": "Select: Daily, Weekly, Bi-weekly, Monthly, Quarterly, Seasonal",
+                "preferred_channels": "Select: Email, SMS, Social Media, Website, Mobile App, In-store, All",
+                "device_preference": "Select: Desktop, Mobile, Tablet, All"
+              },
+              "product_preferences": {
+                "categories": "Textarea",
+                "price_sensitivity": "Select: Very price-sensitive, Somewhat price-sensitive, Price-neutral, Premium-focused, Luxury-focused"
+              },
+              "pain_points_motivations": "Textarea",
+              "email_engagement_patterns": "Textarea",
+              "preferred_communication_style": "Select: Formal, Casual, Friendly, Professional, Playful, Minimal, Detailed"
+            },
+            "persona_3": {
+              "persona_name": "Text input",
+              "demographics": {
+                "age_range": "Select: 18-24, 25-34, 35-44, 45-54, 55-64, 65+",
+                "gender": "Select: Male, Female, Non-binary, All",
+                "location": "Text input",
+                "income_level": "Select: Low, Middle, Upper-middle, High, Not specified"
+              },
+              "psychographics": {
+                "interests": "Textarea",
+                "values": "Textarea",
+                "lifestyle": "Textarea"
+              },
+              "shopping_behavior": {
+                "frequency": "Select: Daily, Weekly, Bi-weekly, Monthly, Quarterly, Seasonal",
+                "preferred_channels": "Select: Email, SMS, Social Media, Website, Mobile App, In-store, All",
+                "device_preference": "Select: Desktop, Mobile, Tablet, All"
+              },
+              "product_preferences": {
+                "categories": "Textarea",
+                "price_sensitivity": "Select: Very price-sensitive, Somewhat price-sensitive, Price-neutral, Premium-focused, Luxury-focused"
+              },
+              "pain_points_motivations": "Textarea",
+              "email_engagement_patterns": "Textarea",
+              "preferred_communication_style": "Select: Formal, Casual, Friendly, Professional, Playful, Minimal, Detailed"
+            },
+            "persona_4": {
+              "persona_name": "Text input",
+              "demographics": {
+                "age_range": "Select: 18-24, 25-34, 35-44, 45-54, 55-64, 65+",
+                "gender": "Select: Male, Female, Non-binary, All",
+                "location": "Text input",
+                "income_level": "Select: Low, Middle, Upper-middle, High, Not specified"
+              },
+              "psychographics": {
+                "interests": "Textarea",
+                "values": "Textarea",
+                "lifestyle": "Textarea"
+              },
+              "shopping_behavior": {
+                "frequency": "Select: Daily, Weekly, Bi-weekly, Monthly, Quarterly, Seasonal",
+                "preferred_channels": "Select: Email, SMS, Social Media, Website, Mobile App, In-store, All",
+                "device_preference": "Select: Desktop, Mobile, Tablet, All"
+              },
+              "product_preferences": {
+                "categories": "Textarea",
+                "price_sensitivity": "Select: Very price-sensitive, Somewhat price-sensitive, Price-neutral, Premium-focused, Luxury-focused"
+              },
+              "pain_points_motivations": "Textarea",
+              "email_engagement_patterns": "Textarea",
+              "preferred_communication_style": "Select: Formal, Casual, Friendly, Professional, Playful, Minimal, Detailed"
+            }
+          },
+          "customer_journey_stages": {
+            "awareness_stage": "Textarea - How they discover brand",
+            "consideration_stage": "Textarea - Research behavior",
+            "purchase_stage": "Textarea - Decision factors",
+            "post_purchase": "Textarea - Satisfaction, reviews",
+            "retention_stage": "Textarea - Repeat purchase triggers",
+            "advocacy_stage": "Textarea - Referrals, reviews"
+          },
+          "purchase_behavior_patterns": {
+            "average_purchase_frequency": "Select: Daily, Weekly, Bi-weekly, Monthly, Bi-monthly, Quarterly, Semi-annually, Annually, Varies",
+            "average_order_value_by_segment": "Textarea",
+            "preferred_product_categories": "Textarea",
+            "seasonal_buying_patterns": "Textarea",
+            "price_sensitivity_levels": "Select: Very price-sensitive, Somewhat price-sensitive, Price-neutral, Premium-focused, Luxury-focused",
+            "discount_code_usage_behavior": "Select: Always use codes, Sometimes use codes, Never use codes, Prefer no discounts",
+            "cart_abandonment_triggers": "Textarea"
+          },
+          "lifecycle_segments": {
+            "new_customers_0_30_days": "Textarea",
+            "active_customers_30_90_days": "Textarea",
+            "repeat_buyers_3_plus_purchases": "Textarea",
+            "vip_high_value_customers_top_20": "Textarea",
+            "at_risk_customers_60_90_days_inactive": "Textarea",
+            "dormant_customers_90_plus_days_inactive": "Textarea",
+            "win_back_opportunities": "Textarea"
+          },
+          "geographic_time_based_patterns": {
+            "top_performing_regions_countries": "Textarea",
+            "time_zone_preferences": "Textarea",
+            "optimal_send_times_by_region": "Textarea",
+            "localization_needs": {
+              "language": "Select: English, Spanish, French, German, Italian, Portuguese, Chinese, Japanese, Korean, Arabic, Other",
+              "currency": "Select: USD, EUR, GBP, CAD, AUD, JPY, CNY, Other"
+            },
+            "regional_product_preferences": "Textarea"
+          }
+        },
+        "ecommerce_business_intelligence": {
+          "revenue_goals_targets": {
+            "monthly_revenue_target": "Number input (currency)",
+            "quarterly_revenue_target": "Number input (currency)",
+            "annual_revenue_target": "Number input (currency)",
+            "email_marketing_revenue_contribution_percent": "Text input (percentage)",
+            "growth_rate_expectations": "Text input (percentage)"
+          },
+          "customer_lifetime_value_ltv": {
+            "average_ltv_by_segment": "Textarea",
+            "ltv_by_acquisition_channel": "Textarea",
+            "ltv_by_product_category": "Textarea",
+            "ltv_improvement_opportunities": "Textarea"
+          },
+          "repeat_purchase_metrics": {
+            "repeat_purchase_rate_percent": "Text input (percentage)",
+            "average_time_between_purchases": "Select: Same day, 1-7 days, 1-2 weeks, 2-4 weeks, 1-2 months, 2-3 months, 3-6 months, 6+ months",
+            "repeat_purchase_rate_by_segment": "Textarea",
+            "loyalty_program_impact": "Select: Significant impact, Moderate impact, Minimal impact, No loyalty program"
+          },
+          "cart_abandonment_insights": {
+            "overall_cart_abandonment_rate": "Text input (percentage)",
+            "abandonment_rate_by_product_category": "Textarea",
+            "average_abandoned_cart_value": "Number input (currency)",
+            "time_to_abandon": "Select: Less than 1 hour, 1-6 hours, 6-24 hours, 1-3 days, 3-7 days, 7+ days",
+            "recovery_rate_from_email_campaigns": "Text input (percentage)"
+          },
+          "browse_abandonment_insights": {
+            "browse_abandonment_rate": "Text input (percentage)",
+            "most_browsed_categories": "Textarea",
+            "browse_to_purchase_conversion_rate": "Text input (percentage)",
+            "browse_abandonment_recovery_opportunities": "Textarea"
+          },
+          "product_affinity_analysis": {
+            "product_pairs_frequently_bought_together": "Textarea",
+            "category_cross_sell_opportunities": "Textarea",
+            "complementary_product_recommendations": "Textarea",
+            "product_recommendation_engine_insights": "Textarea"
+          },
+          "email_performance_benchmarks": {
+            "current_open_rate_average": "Text input (percentage)",
+            "current_ctr_average": "Text input (percentage)",
+            "current_conversion_rate_average": "Text input (percentage)",
+            "revenue_per_email_sent": "Number input (currency)",
+            "revenue_per_recipient": "Number input (currency)",
+            "industry_benchmark_comparison": "Select: Above industry average, At industry average, Below industry average, Not measured"
+          }
+        },
+        "competitive_landscape": {
+          "competitor_analysis": {
+            "competitor_1": {
+              "competitor_name": "Text input",
+              "email_frequency": "Select: Daily, 2-3x per week, Weekly, Bi-weekly, Monthly, Varies",
+              "email_types": "Select: Promotional, Transactional, Newsletter, Educational, Mixed",
+              "subject_line_style": "Select: Direct, Question-based, Emoji-heavy, Benefit-focused, Urgency-driven, Personal, Minimal",
+              "design_style": "Select: Minimalist, Bold, Product-focused, Lifestyle-focused, Text-heavy, Image-heavy, Modern, Classic",
+              "cta_strategies": "Textarea",
+              "personalization_level": "Select: None, Basic (name only), Moderate, Advanced, Highly personalized",
+              "discount_promotion_frequency": "Select: Always, Frequently, Occasionally, Rarely, Never",
+              "content_themes": "Textarea"
+            },
+            "competitor_2": {
+              "competitor_name": "Text input",
+              "email_frequency": "Select: Daily, 2-3x per week, Weekly, Bi-weekly, Monthly, Varies",
+              "email_types": "Select: Promotional, Transactional, Newsletter, Educational, Mixed",
+              "subject_line_style": "Select: Direct, Question-based, Emoji-heavy, Benefit-focused, Urgency-driven, Personal, Minimal",
+              "design_style": "Select: Minimalist, Bold, Product-focused, Lifestyle-focused, Text-heavy, Image-heavy, Modern, Classic",
+              "cta_strategies": "Textarea",
+              "personalization_level": "Select: None, Basic (name only), Moderate, Advanced, Highly personalized",
+              "discount_promotion_frequency": "Select: Always, Frequently, Occasionally, Rarely, Never",
+              "content_themes": "Textarea"
+            },
+            "competitor_3": {
+              "competitor_name": "Text input",
+              "email_frequency": "Select: Daily, 2-3x per week, Weekly, Bi-weekly, Monthly, Varies",
+              "email_types": "Select: Promotional, Transactional, Newsletter, Educational, Mixed",
+              "subject_line_style": "Select: Direct, Question-based, Emoji-heavy, Benefit-focused, Urgency-driven, Personal, Minimal",
+              "design_style": "Select: Minimalist, Bold, Product-focused, Lifestyle-focused, Text-heavy, Image-heavy, Modern, Classic",
+              "cta_strategies": "Textarea",
+              "personalization_level": "Select: None, Basic (name only), Moderate, Advanced, Highly personalized",
+              "discount_promotion_frequency": "Select: Always, Frequently, Occasionally, Rarely, Never",
+              "content_themes": "Textarea"
+            },
+            "competitor_4": {
+              "competitor_name": "Text input",
+              "email_frequency": "Select: Daily, 2-3x per week, Weekly, Bi-weekly, Monthly, Varies",
+              "email_types": "Select: Promotional, Transactional, Newsletter, Educational, Mixed",
+              "subject_line_style": "Select: Direct, Question-based, Emoji-heavy, Benefit-focused, Urgency-driven, Personal, Minimal",
+              "design_style": "Select: Minimalist, Bold, Product-focused, Lifestyle-focused, Text-heavy, Image-heavy, Modern, Classic",
+              "cta_strategies": "Textarea",
+              "personalization_level": "Select: None, Basic (name only), Moderate, Advanced, Highly personalized",
+              "discount_promotion_frequency": "Select: Always, Frequently, Occasionally, Rarely, Never",
+              "content_themes": "Textarea"
+            },
+            "competitor_5": {
+              "competitor_name": "Text input",
+              "email_frequency": "Select: Daily, 2-3x per week, Weekly, Bi-weekly, Monthly, Varies",
+              "email_types": "Select: Promotional, Transactional, Newsletter, Educational, Mixed",
+              "subject_line_style": "Select: Direct, Question-based, Emoji-heavy, Benefit-focused, Urgency-driven, Personal, Minimal",
+              "design_style": "Select: Minimalist, Bold, Product-focused, Lifestyle-focused, Text-heavy, Image-heavy, Modern, Classic",
+              "cta_strategies": "Textarea",
+              "personalization_level": "Select: None, Basic (name only), Moderate, Advanced, Highly personalized",
+              "discount_promotion_frequency": "Select: Always, Frequently, Occasionally, Rarely, Never",
+              "content_themes": "Textarea"
+            }
+          },
+          "market_positioning": {
+            "our_market_position": "Select: Premium, Mid-market, Value, Budget, Luxury, Not defined",
+            "competitor_positioning": "Textarea",
+            "unique_value_propositions_vs_competitors": "Textarea",
+            "price_positioning_vs_competitors": "Select: Higher, Similar, Lower, Varies by product",
+            "product_differentiation_points": "Textarea"
+          },
+          "competitive_advantages": {
+            "what_we_do_better": "Textarea",
+            "unique_selling_points_usps": "Textarea",
+            "exclusive_products_features": "Textarea",
+            "better_customer_service": "Textarea",
+            "better_email_experience": "Textarea"
+          },
+          "competitive_gaps_opportunities": {
+            "what_competitors_do_well": "Textarea - To learn from",
+            "gaps_in_competitor_strategies": "Textarea - Opportunities",
+            "underserved_customer_segments": "Textarea",
+            "content_themes_competitors_miss": "Textarea",
+            "timing_opportunities": "Textarea - When competitors are quiet"
+          },
+          "industry_trends_insights": {
+            "current_ecommerce_email_trends": "Textarea",
+            "emerging_best_practices": "Textarea",
+            "technology_trends": "Select: AI personalization, Automation, Interactive emails, Video in email, AMP emails, Dark mode, Other",
+            "consumer_behavior_shifts": "Textarea",
+            "seasonal_trends_in_industry": "Textarea"
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "total_templates": 9,
+    "total_sections": 60,
+    "template_files": [
+      "klaviyo-campaign-template.html",
+      "klaviyo-flow-planning-template.html",
+      "klaviyo-segmentation-template.html",
+      "klaviyo-success-measurement-template.html",
+      "klaviyo-reputation-deliverability-template.html",
+      "klaviyo-compliance-rules-template.json",
+      "klaviyo-content-copy-checklist-template.json",
+      "klaviyo-campaign-post-mortem-template.json",
+      "klaviyo-ecommerce-strategic-foundation-template.json"
+    ]
+  }
+}

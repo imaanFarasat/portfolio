@@ -1,0 +1,244 @@
+{
+  "forms": [
+    {
+      "id": "form-1",
+      "title": "Login Form Design",
+      "description": "Modern login form with clean UI, password visibility toggle, and social login options",
+      "category": "Authentication",
+      "style": "Minimalist",
+      "embedUrl": "",
+      "tags": ["login", "authentication", "minimalist", "modern"]
+    },
+    {
+      "id": "form-2",
+      "title": "Signup Registration Form",
+      "description": "User-friendly registration form with validation, progress indicator, and multi-step design",
+      "category": "Authentication",
+      "style": "Material Design",
+      "embedUrl": "",
+      "tags": ["signup", "registration", "material design", "multi-step"]
+    },
+    {
+      "id": "form-3",
+      "title": "Contact Form",
+      "description": "Professional contact form with message field, file upload, and CAPTCHA integration",
+      "category": "Contact",
+      "style": "Classic",
+      "embedUrl": "",
+      "tags": ["contact", "message", "professional", "classic"]
+    },
+    {
+      "id": "form-4",
+      "title": "Newsletter Subscription",
+      "description": "Elegant newsletter signup form with email validation and incentive messaging",
+      "category": "Subscription",
+      "style": "Modern",
+      "embedUrl": "",
+      "tags": ["newsletter", "subscription", "email", "modern"]
+    },
+    {
+      "id": "form-5",
+      "title": "Checkout Form",
+      "description": "E-commerce checkout form with payment options, shipping details, and order summary",
+      "category": "E-commerce",
+      "style": "Neumorphism",
+      "embedUrl": "",
+      "tags": ["checkout", "payment", "ecommerce", "neumorphism"]
+    },
+    {
+      "id": "form-6",
+      "title": "Survey Form",
+      "description": "Interactive survey form with multiple question types, progress bar, and conditional logic",
+      "category": "Survey",
+      "style": "Interactive",
+      "embedUrl": "",
+      "tags": ["survey", "questionnaire", "interactive", "data collection"]
+    },
+    {
+      "id": "form-7",
+      "title": "Job Application Form",
+      "description": "Professional job application form with resume upload, cover letter, and skills assessment",
+      "category": "Application",
+      "style": "Professional",
+      "embedUrl": "",
+      "tags": ["job application", "resume", "professional", "career"]
+    },
+    {
+      "id": "form-8",
+      "title": "Feedback Form",
+      "description": "User feedback form with rating system, comment section, and satisfaction metrics",
+      "category": "Feedback",
+      "style": "User-Friendly",
+      "embedUrl": "",
+      "tags": ["feedback", "rating", "review", "user experience"]
+    },
+    {
+      "id": "form-9",
+      "title": "Booking Form",
+      "description": "Appointment booking form with calendar picker, time slots, and service selection",
+      "category": "Booking",
+      "style": "Functional",
+      "embedUrl": "",
+      "tags": ["booking", "appointment", "calendar", "scheduling"]
+    },
+    {
+      "id": "form-10",
+      "title": "Password Reset Form",
+      "description": "Secure password reset form with email verification and security guidelines",
+      "category": "Security",
+      "style": "Secure",
+      "embedUrl": "",
+      "tags": ["password reset", "security", "authentication", "recovery"]
+    }
+  ],
+  "landingPages": [
+    {
+      "id": "landing-1",
+      "title": "SaaS Product Landing Page",
+      "description": "Modern SaaS landing page with hero section, feature highlights, pricing tiers, and CTA buttons",
+      "category": "SaaS",
+      "style": "Modern",
+      "embedUrl": "",
+      "tags": ["saas", "product", "modern", "tech"]
+    },
+    {
+      "id": "landing-2",
+      "title": "E-commerce Landing Page",
+      "description": "Fashion e-commerce landing page with product showcase, category navigation, and promotional banners",
+      "category": "E-commerce",
+      "style": "Elegant",
+      "embedUrl": "",
+      "tags": ["ecommerce", "fashion", "shopping", "retail"],
+      "usedIn": "jbl-headphones-landing.html",
+      "usedFor": "JBL Tune 310C Headphones - Product landing page with red color theme, hero section, features grid, and product specifications"
+    },
+    {
+      "id": "landing-3",
+      "title": "Portfolio Landing Page",
+      "description": "Creative portfolio landing page with project gallery, about section, and contact form",
+      "category": "Portfolio",
+      "style": "Creative",
+      "embedUrl": "",
+      "tags": ["portfolio", "creative", "showcase", "personal"]
+    },
+    {
+      "id": "landing-4",
+      "title": "App Launch Landing Page",
+      "description": "Mobile app launch page with app preview, download buttons, features, and testimonials",
+      "category": "Mobile App",
+      "style": "App Store",
+      "embedUrl": "",
+      "tags": ["mobile app", "download", "ios", "android"]
+    },
+    {
+      "id": "landing-5",
+      "title": "Event Landing Page",
+      "description": "Event registration landing page with event details, schedule, speaker profiles, and ticket booking",
+      "category": "Event",
+      "style": "Dynamic",
+      "embedUrl": "",
+      "tags": ["event", "conference", "registration", "tickets"]
+    },
+    {
+      "id": "landing-6",
+      "title": "Service Landing Page",
+      "description": "Professional services landing page with service offerings, process flow, and client testimonials",
+      "category": "Services",
+      "style": "Professional",
+      "embedUrl": "",
+      "tags": ["services", "business", "professional", "consulting"],
+      "usedIn": "bedsure-blanket-landing.html",
+      "usedFor": "Bedsure Blankets - Professional service-style landing page for home products with clean layout, feature grid, product showcase, and direct shopping link integration"
+    },
+    {
+      "id": "landing-7",
+      "title": "Course Landing Page",
+      "description": "Online course landing page with curriculum overview, instructor bio, pricing, and enrollment CTA",
+      "category": "Education",
+      "style": "Educational",
+      "embedUrl": "",
+      "tags": ["course", "education", "learning", "online"]
+    },
+    {
+      "id": "landing-8",
+      "title": "Real Estate Landing Page",
+      "description": "Property listing landing page with image gallery, property details, virtual tour, and inquiry form",
+      "category": "Real Estate",
+      "style": "Luxury",
+      "embedUrl": "",
+      "tags": ["real estate", "property", "listing", "luxury"],
+      "usedIn": "turkish-towel-landing.html",
+      "usedFor": "Premium Turkish Towels - Luxury home collection landing page with elegant serif typography, sophisticated layout, image gallery showcase, and luxury product presentation"
+    },
+    {
+      "id": "landing-9",
+      "title": "Restaurant Landing Page",
+      "description": "Restaurant landing page with menu highlights, reservation system, location, and reviews",
+      "category": "Food & Beverage",
+      "style": "Appetizing",
+      "embedUrl": "",
+      "tags": ["restaurant", "food", "menu", "dining"],
+      "usedIn": "bakery-donuts-landing.html",
+      "usedFor": "The Bakery Express Donuts - Appetizing restaurant-style landing page with warm color palette, donut gallery showcase, menu section, and direct ordering link integration"
+    },
+    {
+      "id": "landing-10",
+      "title": "Fitness Landing Page",
+      "description": "Fitness center landing page with membership plans, class schedules, trainer profiles, and gym facilities",
+      "category": "Fitness",
+      "style": "Energetic",
+      "embedUrl": "",
+      "tags": ["fitness", "gym", "health", "wellness"]
+    },
+    {
+      "id": "landing-11",
+      "title": "Charity Landing Page",
+      "description": "Non-profit landing page with mission statement, donation options, impact stories, and volunteer signup",
+      "category": "Non-profit",
+      "style": "Heartfelt",
+      "embedUrl": "",
+      "tags": ["charity", "nonprofit", "donation", "cause"]
+    },
+    {
+      "id": "landing-12",
+      "title": "Tech Startup Landing Page",
+      "description": "Technology startup landing page with product demo, team section, investor info, and press kit",
+      "category": "Startup",
+      "style": "Innovative",
+      "embedUrl": "",
+      "tags": ["startup", "tech", "innovation", "venture"],
+      "usedIn": "redragon-gaming-mouse-landing.html",
+      "usedFor": "Redragon M612 Predator Gaming Mouse - Dark gaming theme with RGB accents, tech startup style layout, hero section, features grid, and RGB mode showcase"
+    },
+    {
+      "id": "landing-13",
+      "title": "Travel Landing Page",
+      "description": "Travel destination landing page with photo gallery, itinerary options, booking system, and travel tips",
+      "category": "Travel",
+      "style": "Adventurous",
+      "embedUrl": "",
+      "tags": ["travel", "tourism", "destination", "vacation"]
+    },
+    {
+      "id": "landing-14",
+      "title": "Agency Landing Page",
+      "description": "Creative agency landing page with portfolio showcase, team members, services, and case studies",
+      "category": "Agency",
+      "style": "Creative Agency",
+      "embedUrl": "",
+      "tags": ["agency", "creative", "design", "marketing"],
+      "usedIn": "godox-studio-landing.html",
+      "usedFor": "Godox Studio Photography Lighting Kit - Creative agency-style landing page with gradient hero, modern typography, feature grid, product showcase, and professional photography equipment presentation"
+    },
+    {
+      "id": "landing-15",
+      "title": "Healthcare Landing Page",
+      "description": "Medical practice landing page with services, doctor profiles, appointment booking, and health resources",
+      "category": "Healthcare",
+      "style": "Medical",
+      "embedUrl": "",
+      "tags": ["healthcare", "medical", "doctor", "clinic"]
+    }
+  ]
+}
+

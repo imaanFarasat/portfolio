@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Turkish Towels - Luxury Home Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #2c2c2c;
+            overflow-x: hidden;
+            background: #faf9f7;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 25px 0;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #8b7355;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #5a5a5a;
+            font-weight: 400;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+            text-transform: uppercase;
+        }
+
+        .nav-links a:hover {
+            color: #8b7355;
+        }
+
+        /* Hero Section - Luxury Style */
+        .hero {
+            background: linear-gradient(135deg, #f5f3f0 0%, #e8e5e0 100%);
+            color: #2c2c2c;
+            padding: 120px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(139,115,85,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            color: #3a3a3a;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: #8b7355;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .hero-content .description {
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            color: #5a5a5a;
+            line-height: 2;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: italic;
+        }
+
+        .hero-image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-image-gallery img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .hero-image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #8b7355;
+            color: white;
+            padding: 18px 50px;
+            font-size: 1rem;
+            font-weight: 400;
+            text-decoration: none;
+            border-radius: 0;
+            transition: background 0.3s;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: 2px solid #8b7355;
+        }
+
+        .cta-button:hover {
+            background: transparent;
+            color: #8b7355;
+        }
+
+        /* Features Section - Elegant */
+        .features {
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: #3a3a3a;
+            font-style: italic;
+            letter-spacing: 3px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #8b7355;
+            margin-bottom: 80px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            color: #8b7355;
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: #3a3a3a;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .feature-card p {
+            color: #5a5a5a;
+            line-height: 2;
+            font-size: 1.05rem;
+            font-style: italic;
+        }
+
+        /* Product Details - Luxury Showcase */
+        .product-details {
+            padding: 100px 20px;
+            background: #faf9f7;
+        }
+
+        .product-details-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-showcase-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 80px;
+        }
+
+        .product-image-large {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-info h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            color: #3a3a3a;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+
+        .product-info p {
+            font-size: 1.15rem;
+            color: #5a5a5a;
+            line-height: 2;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .spec-list {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .spec-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #e8e5e0;
+            font-size: 1.05rem;
+            color: #5a5a5a;
+        }
+
+        .spec-list li:last-child {
+            border-bottom: none;
+        }
+
+        .spec-list li strong {
+            color: #8b7355;
+            margin-right: 15px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .price {
+            font-size: 2.8rem;
+            font-weight: 300;
+            color: #8b7355;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #8b7355 0%, #6b5d47 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 25px;
+            font-style: italic;
+            letter-spacing: 3px;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 50px;
+            font-style: italic;
+            opacity: 0.95;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c2c2c;
+            color: #aaa;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-image-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .product-showcase-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                gap: 20px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Anatolico</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#buy">Shop</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Premium Turkish Towels</h1>
+                <p class="subtitle">Luxury Home Collection</p>
+                <p class="description">
+                    Experience the ultimate in comfort and elegance with our handcrafted Turkish towels. 
+                    Made from premium cotton, these luxurious towels combine traditional craftsmanship 
+                    with modern design for an unparalleled bathing experience.
+                </p>
+                <a href="#buy" class="cta-button">Discover Collection</a>
+            </div>
+            <div class="hero-image-gallery">
+                <img src="https://www.anatolico.co/cdn/shop/files/IMG_1253.jpg?v=1680502255&width=740" alt="Turkish Towel Collection">
+                <img src="https://www.anatolico.co/cdn/shop/files/TM4A0638.jpg?v=1680502263&width=740" alt="Turkish Towel Detail">
+                <img src="https://www.anatolico.co/cdn/shop/files/IMG_7678.jpg" alt="Turkish Towel Luxury">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2 class="section-title">Why Choose Turkish Towels</h2>
+            <p class="section-subtitle">Luxury Meets Functionality</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧵</div>
+                    <h3>Handcrafted Quality</h3>
+                    <p>Each towel is meticulously handcrafted using traditional Turkish techniques passed down through generations, ensuring exceptional quality and durability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Premium Cotton</h3>
+                    <p>Made from 100% premium Turkish cotton, our towels are incredibly soft, highly absorbent, and gentle on the skin.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Quick Drying</h3>
+                    <p>Lightweight and fast-drying design makes these towels perfect for travel, beach, spa, or everyday use.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Elegant Design</h3>
+                    <p>Beautiful patterns and colors inspired by Turkish heritage, adding a touch of luxury to any bathroom or spa setting.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌊</div>
+                    <h3>Versatile Use</h3>
+                    <p>Perfect as bath towels, beach towels, spa wraps, or decorative throws. One towel, endless possibilities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Luxury Feel</h3>
+                    <p>Experience the plush, luxurious feel that only authentic Turkish towels can provide. Soft, absorbent, and elegant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="product-details" id="details">
+        <div class="product-details-container">
+            <div class="product-showcase-grid">
+                <img src="https://www.anatolico.co/cdn/shop/files/IMG_1253.jpg?v=1680502255&width=740" alt="Premium Turkish Towel" class="product-image-large">
+                <div class="product-info">
+                    <h2>Authentic Turkish Craftsmanship</h2>
+                    <p>
+                        Our Turkish towels are crafted by skilled artisans using time-honored techniques. 
+                        Each piece is a work of art, combining functionality with timeless elegance.
+                    </p>
+                    <ul class="spec-list">
+                        <li><strong>Material:</strong> 100% Premium Turkish Cotton</li>
+                        <li><strong>Weight:</strong> Lightweight & Quick-Drying</li>
+                        <li><strong>Size:</strong> Generous Dimensions</li>
+                        <li><strong>Absorbency:</strong> Highly Absorbent</li>
+                        <li><strong>Care:</strong> Machine Washable</li>
+                        <li><strong>Origin:</strong> Handcrafted in Turkey</li>
+                        <li><strong>Design:</strong> Traditional Turkish Patterns</li>
+                        <li><strong>Texture:</strong> Soft & Plush</li>
+                    </ul>
+                    <div class="price">From $45</div>
+                    <a href="#buy" class="cta-button" style="display: inline-block; text-align: center;">Shop Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="image-gallery" id="gallery">
+        <div class="gallery-container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">Discover Our Collection</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://www.anatolico.co/cdn/shop/files/IMG_1253.jpg?v=1680502255&width=740" alt="Turkish Towel Collection">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.anatolico.co/cdn/shop/files/TM4A0638.jpg?v=1680502263&width=740" alt="Turkish Towel Detail">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.anatolico.co/cdn/shop/files/IMG_7678.jpg" alt="Turkish Towel Luxury">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="buy">
+        <h2>Elevate Your Home</h2>
+        <p>Transform your bathroom into a luxury spa with our premium Turkish towel collection</p>
+        <a href="#" class="cta-button" style="background: white; color: #8b7355; border-color: white;">Shop Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Anatolico. All rights reserved. | Premium Turkish Home Collection</p>
+    </footer>
+</body>
+</html>
+
