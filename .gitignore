@@ -30,3 +30,5 @@ npm-debug.log*
 *.tmp
 *.temp
 
+"*.pickle" 
+"token*.pickle" 
