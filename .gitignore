@@ -32,3 +32,6 @@ npm-debug.log*
 
 "*.pickle" 
 "token*.pickle" 
+"*.pickle" 
+"token*.pickle" 
+"product-automation/token*.pickle" 
