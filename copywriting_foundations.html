@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copywriting Foundations — Iman Farasat</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            theme: 'default',
+            themeVariables: {
+                primaryColor: '#6366f1',
+                primaryTextColor: '#ffffff',
+                primaryBorderColor: '#4f46e5',
+                lineColor: '#6366f1',
+                secondaryColor: '#8b5cf6',
+                tertiaryColor: '#a78bfa'
+            }
+        });
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        /* ============================================
+           RESET & BASE STYLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            min-height: 100vh;
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        /* ============================================
+           SIDEBAR NAVIGATION
+           ============================================ */
+        .sidebar {
+            width: 280px;
+            background: #ffffff;
+            padding: 48px 32px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #e8e8e8;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.625rem;
+            font-weight: 700;
+            margin-bottom: 56px;
+            color: #1a1a1a;
+            line-height: 1.2;
+            letter-spacing: -0.3px;
+        }
+
+        .logo a {
+            color: #1a1a1a;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .logo a:hover {
+            opacity: 0.7;
+        }
+
+        .menu-title {
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #888888;
+        }
+
+        .menu-item {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            padding: 10px 12px;
+            border-radius: 6px;
+            color: #666666;
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu-item:hover {
+            background: #f8f8f8;
+            color: #1a1a1a;
+        }
+
+        .menu-item.active {
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+
+        /* ============================================
+           MAIN CONTENT AREA
+           ============================================ */
+        .main-content {
+            margin-left: 280px;
+            flex: 1;
+            padding: 64px 96px;
+            background: #fafafa;
+            max-width: 1000px;
+        }
+
+        .header {
+            margin-bottom: 64px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .header h1 {
+            font-size: 3.25rem;
+            font-weight: 700;
+            letter-spacing: -1.2px;
+            line-height: 1.15;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .header p {
+            font-size: 1.0625rem;
+            color: #666666;
+            font-weight: 400;
+        }
+
+        /* ============================================
+           CARD LAYOUT (HORIZONTAL LIKE EMAILS)
+           ============================================ */
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .project-card {
+            background: #ffffff;
+            border: 1px solid #e8e8e8;
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            border-color: #d0d0d0;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-card-content {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .project-card-preview {
+            flex-shrink: 0;
+            width: 280px;
+            height: 360px;
+            border: 1px solid #e8e8e8;
+            border-radius: 12px;
+            background: #ffffff;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .project-card:hover .project-card-preview {
+            border-color: #d0d0d0;
+        }
+
+        .project-card-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            background-color: #f5f5f5;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-card-preview img {
+            transform: scale(1.05);
+        }
+
+        .project-card-info {
+            flex: 1;
+        }
+
+        .project-card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+            line-height: 1.3;
+        }
+
+        .project-card-type {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            background: #f0f0f0;
+            color: #666666;
+        }
+
+        .project-card-description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #4a4a4a;
+            margin-bottom: 16px;
+        }
+
+        .project-card-link {
+            display: inline-block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-decoration: none;
+            margin-top: 8px;
+            transition: opacity 0.2s ease;
+        }
+
+        .project-card-link:hover {
+            opacity: 0.7;
+        }
+
+        .project-card-link::after {
+            content: ' →';
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover .project-card-link::after {
+            transform: translateX(4px);
+        }
+
+        /* ============================================
+           EXPANDED CONTENT SECTIONS
+           ============================================ */
+        .content-section {
+            margin-bottom: 72px;
+            display: none;
+            padding-top: 32px;
+        }
+
+        .content-section.expanded {
+            display: block;
+        }
+
+        .section-close {
+            display: inline-block;
+            margin-bottom: 24px;
+            padding: 8px 16px;
+            background: #f0f0f0;
+            border: 1px solid #e8e8e8;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #666666;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .section-close:hover {
+            background: #e8e8e8;
+            color: #1a1a1a;
+        }
+
+        /* ============================================
+           TEXT-BASED TREE VISUALIZATION
+           ============================================ */
+        .journey-chart {
+            margin: 40px 0;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        .tree-diagram {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #1a1a1a;
+            white-space: pre;
+            padding: 20px;
+        }
+
+        .tree-node {
+            font-weight: 600;
+            color: #6366f1;
+            font-size: 14px;
+        }
+
+        .tree-detail {
+            font-size: 12px;
+            color: #666666;
+            font-style: italic;
+            margin-left: 20px;
+        }
+
+        .tree-link {
+            color: #6366f1;
+        }
+
+        .tree-node-special {
+            font-weight: 600;
+            color: #10b981;
+            font-size: 14px;
+        }
+
+        .content-section h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.8px;
+            margin-bottom: 32px;
+            color: #1a1a1a;
+            line-height: 1.25;
+        }
+
+        .content-section h3 {
+            font-size: 1.375rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            line-height: 1.4;
+        }
+
+        .content-section p {
+            font-size: 1.0625rem;
+            line-height: 1.75;
+            margin-bottom: 20px;
+            color: #2a2a2a;
+        }
+
+        .content-section ul {
+            margin: 24px 0;
+            padding-left: 28px;
+        }
+
+        .content-section li {
+            font-size: 1.0625rem;
+            line-height: 1.75;
+            margin-bottom: 10px;
+            color: #2a2a2a;
+        }
+
+        .book-cover-container {
+            margin: 56px 0;
+            text-align: center;
+        }
+
+        .book-cover-image {
+            max-width: 420px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .book-cover-caption {
+            font-size: 0.9375rem;
+            color: #666666;
+            font-style: italic;
+            margin-top: 16px;
+        }
+
+        .highlight-box {
+            background: #f8f8f8;
+            border-left: 3px solid #1a1a1a;
+            padding: 28px;
+            margin: 32px 0;
+            border-radius: 6px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 16px;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .meta-info {
+            margin: 24px 0 32px;
+        }
+
+        .meta-info p {
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #555555;
+        }
+
+        /* ============================================
+           IMAGE GALLERY
+           ============================================ */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin: 48px 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: #ffffff;
+            aspect-ratio: 1 / 1;
+            min-height: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 1px solid #f0f0f0;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+            border-color: #e0e0e0;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+        }
+
+        .project-divider {
+            margin: 96px 0;
+            border-top: 1px solid #e8e8e8;
+        }
+
+        /* ============================================
+           LIGHTBOX MODAL
+           ============================================ */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.96);
+            animation: fadeIn 0.25s ease;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 92%;
+            max-height: 92%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 92vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 24px;
+            right: 32px;
+            color: #ffffff;
+            font-size: 36px;
+            font-weight: 300;
+            cursor: pointer;
+            z-index: 10000;
+            transition: all 0.2s ease;
+            line-height: 1;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+        }
+
+        .lightbox-close:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: scale(1.05);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 300;
+            cursor: pointer;
+            z-index: 10000;
+            transition: all 0.2s ease;
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        .lightbox-prev {
+            left: 24px;
+        }
+
+        .lightbox-next {
+            right: 24px;
+        }
+
+        /* ============================================
+           RESPONSIVE STYLES
+           ============================================ */
+        @media (max-width: 1024px) {
+            .sidebar {
+                width: 240px;
+                padding: 40px 28px;
+            }
+
+            .main-content {
+                margin-left: 240px;
+                padding: 56px 64px;
+            }
+
+            .header h1 {
+                font-size: 2.875rem;
+            }
+
+            .content-section h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: relative;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid #e8e8e8;
+                padding: 32px 24px;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 40px 24px;
+            }
+
+            .header {
+                margin-bottom: 48px;
+                padding-bottom: 24px;
+            }
+
+            .header h1 {
+                font-size: 2.25rem;
+            }
+
+            .content-section {
+                margin-bottom: 64px;
+            }
+
+            .content-section h2 {
+                font-size: 1.875rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.25rem;
+                margin-top: 32px;
+            }
+
+            .image-gallery {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin: 40px 0;
+            }
+
+            .lightbox-content {
+                max-width: 96%;
+                max-height: 88%;
+            }
+
+            .lightbox-close {
+                top: 16px;
+                right: 20px;
+                font-size: 28px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .lightbox-nav {
+                width: 44px;
+                height: 44px;
+                font-size: 28px;
+            }
+
+            .lightbox-prev {
+                left: 16px;
+            }
+
+            .lightbox-next {
+                right: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- LEFT SIDEBAR MENU -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="email_portfolio.html">Iman Farasat</a>
+            </div>
+            
+            <div class="menu-title">NAVIGATION</div>
+            
+            <a href="copywriting_foundations.html" class="menu-item active">Copywriting Foundations</a>
+            <a href="email_portfolio.html" class="menu-item">← Back to Portfolio</a>
+            <a href="subject_lines_showcase.html" class="menu-item">Subject Lines Showcase</a>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <div class="header">
+                <h1>Copywriting Foundations — My Background as a Professional Writer</h1>
+            </div>
+
+            <!-- TREE DIAGRAM AT TOP -->
+            <div class="journey-chart" style="margin-top: 0;">
+                <div class="tree-diagram">
+<span class="tree-node">Fundamentals</span>
+│
+└── <span class="tree-node">IAU University</span>
+    │
+    ├── <span class="tree-node">Degree Program</span>
+    │   │
+    │   └── <span class="tree-node">Bachelor of Art and Culture Management</span> <a href="madrak.jpeg" target="_blank" class="tree-link" onclick="event.stopPropagation(); window.open('madrak.jpeg', '_blank'); return false;" style="margin-left: 8px;">📜 View Certificate</a>
+    │       │
+    │       ├── <span class="tree-node">Article Writing</span>
+    │       │   │
+    │       │   └── <span class="tree-node">Collaboration with Professor Abbas Ashoorinejad</span>
+    │       │       │
+    │       │       └── <span class="tree-detail">In-depth and Multidimensional Research</span>
+    │       │
+    │       └── <span class="tree-node">Thesis</span>
+    │           │
+    │           └── <span class="tree-node">Cultural Factors Shaping Charismatic Identity</span>
+    │               │
+    │               ├── <span class="tree-detail">The Case of Napoleon Bonaparte</span>
+    │               └── <span class="tree-detail">Grade: 19.5/20, Highest Distinction</span>
+    │
+    └── <span class="tree-node">Complementary Programs</span>
+        │
+        ├── <span class="tree-node">Storytelling Certification Program</span>
+        │   │
+        │   ├── <span class="tree-detail">1000 Hours</span>
+        │   └── <a href="https://drive.google.com/file/d/1DCUvcgrM0CEp89NILKBf8qpuY3vQSHPz/view?usp=sharing" target="_blank" class="tree-link">View Certification →</a>
+        │
+        └── <span class="tree-node-special">Digital Communication</span>
+            │
+            ├── <span class="tree-detail">1000 Hours</span>
+            └── <span class="tree-detail">HTML/CSS/Basic JS</span>
+                </div>
+
+                <!-- RESULT STATEMENT -->
+                <div style="margin-top: 48px; padding: 32px; background: #f8f9fa; border-radius: 12px; text-align: center; border: 2px solid #6366f1;">
+                    <div style="font-family: 'Courier New', monospace; font-size: 16px; color: #6366f1; margin-bottom: 16px;">
+                        ──────────────────────────────────────────────────────────────<br>
+                        |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||<br>
+                        ──────────────────────────────────────────────────────────────
+                    </div>
+                    <p style="font-size: 1.5rem; font-weight: 600; color: #1a1a1a; margin: 0; line-height: 1.4;">
+                        Writing + HTML/CSS = Email Marketer
+                    </p>
+                </div>
+            </div>
+
+            <!-- PROJECT CARDS LIST (HORIZONTAL) -->
+            <div class="projects-list">
+                <!-- Card 1: The Four Riders -->
+                <div class="project-card" onclick="expandSection('book-section')">
+                    <div class="project-card-content">
+                        <div class="project-card-preview">
+                            <img src="https://sizdahpub.ir/wp-content/uploads/2023/07/COVER-13-Dastan.jpg" 
+                                 alt="The Four Riders - Published Book Cover"
+                                 crossorigin="anonymous" 
+                                 referrerpolicy="no-referrer" 
+                                 loading="lazy"
+                                 onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://sizdahpub.ir/wp-content/uploads/2023/07/COVER-13-Dastan.jpg';">
+                        </div>
+                        <div class="project-card-info">
+                            <div class="project-card-title">The Four Riders</div>
+                            <div class="project-card-type">Published Fiction</div>
+                            <div class="project-card-description">
+                                A deeply emotional and psychologically intense short story about a young man navigating the terrifying decline of his brother's mental health. Published in a collection featuring 12 other professional writers.
+                            </div>
+                            <a href="#" class="project-card-link" onclick="event.stopPropagation(); expandSection('book-section'); return false;">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Dr. Pahlavan -->
+                <div class="project-card" onclick="expandSection('pahlavan-section')">
+                    <div class="project-card-content">
+                        <div class="project-card-preview">
+                            <img src="Iman (1).jpg" 
+                                 alt="Dr. Pahlavan - Viral Comedy Series"
+                                 loading="lazy"
+                                 onerror="this.onerror=null; this.src='Iman (1).jpg';">
+                        </div>
+                        <div class="project-card-info">
+                            <div class="project-card-title">Dr. Pahlavan</div>
+                            <div class="project-card-type">Viral Video Campaign</div>
+                            <div class="project-card-description">
+                                A viral comedy web series that became extremely popular in Iran, garnering millions of views. I wrote all episodes and provided voice-over narration, contributing to the series' viral success.
+                            </div>
+                            <a href="#" class="project-card-link" onclick="event.stopPropagation(); expandSection('pahlavan-section'); return false;">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Balloon Project -->
+                <div class="project-card" onclick="expandSection('balloon-section')">
+                    <div class="project-card-content">
+                        <div class="project-card-preview">
+                            <img src="balloon-project-images/47691850_152650675720878_8797767739323945819_n.jpg" 
+                                 alt="Balloon Project - Storytelling & Human Connection"
+                                 loading="lazy">
+                        </div>
+                        <div class="project-card-info">
+                            <div class="project-card-title">Balloon Project</div>
+                            <div class="project-card-type">Storytelling & Interviews</div>
+                            <div class="project-card-description">
+                                I initiated and led this project, interviewing 100+ individuals from diverse backgrounds to capture their unique experiences and perspectives—stories often overlooked by mainstream media.
+                            </div>
+                            <a href="#" class="project-card-link" onclick="event.stopPropagation(); expandSection('balloon-section'); return false;">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Irancell Marketing Agency -->
+                <div class="project-card" onclick="expandSection('irancell-section')">
+                    <div class="project-card-content">
+                        <div class="project-card-preview">
+                            <div style="width: 100%; height: 100%; background-color: #f7c500; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 700; color: #1a1a1a; font-family: 'Inter', sans-serif;">
+                                MTN Irancell
+                            </div>
+                        </div>
+                        <div class="project-card-info">
+                            <div class="project-card-title">Irancell Marketing Agency</div>
+                            <div class="project-card-type">Email Designer & Copywriter</div>
+                            <div class="project-card-description">
+                                Started as landing page email designer and copywriter. Worked for 3 months creating WordPress landing pages, then transitioned to Shopify and Klaviyo. Irancell has 100+ customers across its near countries.
+                            </div>
+                            <a href="#" class="project-card-link" onclick="event.stopPropagation(); expandSection('irancell-section'); return false;">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- EXPANDED CONTENT SECTIONS -->
+            <div id="book-section" class="content-section">
+                <button class="section-close" onclick="expandSection('book-section')">← Back to Cards</button>
+                <div class="book-cover-container">
+                    <img src="https://sizdahpub.ir/wp-content/uploads/2023/07/COVER-13-Dastan.jpg" 
+                         alt="The Four Riders - Published Book Cover" 
+                         class="book-cover-image"
+                         crossorigin="anonymous" 
+                         referrerpolicy="no-referrer" 
+                         loading="lazy"
+                         onerror="this.onerror=null; this.src='https://images.weserv.nl/?url=https://sizdahpub.ir/wp-content/uploads/2023/07/COVER-13-Dastan.jpg';">
+                    <p class="book-cover-caption">
+                        Published in a collection featuring 12 other professional writers
+                    </p>
+                </div>
+
+                <h3>Story: The Four Riders (Short Fiction)</h3>
+                
+                <div class="meta-info">
+                    <p><strong>Originally written in Persian</strong></p>
+                    <p><strong>Genre:</strong> Psychological Fiction / Literary Fiction</p>
+                    <p><strong>Author:</strong> Iman Farasat</p>
+                </div>
+
+                <h3>Overview</h3>
+                <p>
+                    The Four Riders is a deeply emotional and psychologically intense short story about a young man navigating the terrifying decline of his brother's mental health. Written in Persian, the narrative explores fear, family responsibility, hallucination, and the fragile boundary between reality and imagination. Through vivid descriptions and raw honesty, the story captures a brother's struggle to protect someone he loves while losing him in a way he can neither stop nor fully understand.
+                </p>
+
+                <h3>Short Summary (English)</h3>
+                <p>
+                    The story follows the narrator and his 28-year-old brother, Farhad, who suffers from severe anxiety, paranoia, and agoraphobia. As Farhad's mental state worsens, he becomes convinced that four men on motorcycles are stalking him, stealing his hat, and hiding inside the house. One afternoon, during a frightening hallucination, he believes he is fighting these attackers. The narrator desperately tries to break into the room to save him—but Farhad, fully lost in his delusion, falls from the window. The authorities call it suicide. The narrator is left alone in the silence of their apartment, wearing Farhad's blood-stained hat and unable to decide whether his brother jumped, was chased by invisible enemies, or was simply defeated by his own mind.
+                </p>
+
+                <h3>Themes</h3>
+                <ul>
+                    <li>Mental health & stigma</li>
+                    <li>Family loyalty</li>
+                    <li>Fear, paranoia & hallucination</li>
+                    <li>Emotional weight of caregiving</li>
+                    <li>The thin line between reality and perception</li>
+                </ul>
+
+                <h3>Why This Story Matters</h3>
+                <p>
+                    This story demonstrates my ability to craft:
+                </p>
+                <ul>
+                    <li>Emotionally powerful narratives</li>
+                    <li>Complex character psychology</li>
+                    <li>Scene-based tension</li>
+                    <li>Long-form storytelling</li>
+                    <li>Descriptive, cinematic writing</li>
+                </ul>
+                <p style="margin-top: 20px;">
+                    It reflects my strength as a writer who can create atmosphere, build narrative arcs, and explore human depth with honesty and precision.
+                </p>
+
+                <h3>Excerpt (Translated to English)</h3>
+                <div class="highlight-box">
+                    <p style="font-style: italic; line-height: 1.8;">
+                        "He sat cross-legged on the pillow, his fingers hanging from his knees, eyes gently shut like a monk preparing for something sacred. When I whispered his name, he lifted a finger to his lips, asking for silence.
+                    </p>
+                    <p style="font-style: italic; line-height: 1.8; margin-top: 15px;">
+                        Moments later he leaned close to my ear and said, 'They came. Two motorcycles… four men.'
+                    </p>
+                    <p style="font-style: italic; line-height: 1.8; margin-top: 15px;">
+                        I held his hand to calm him, but he pulled away. 'They took my hat,' he insisted, though the hat was still on our table.
+                    </p>
+                    <p style="font-style: italic; line-height: 1.8; margin-top: 15px;">
+                        In that moment I realized the danger wasn't outside—it was inside his mind, and I was losing him."
+                    </p>
+                </div>
+            </div>
+
+            <div id="pahlavan-section" class="content-section">
+                <button class="section-close" onclick="expandSection('pahlavan-section')">← Back to Cards</button>
+                <h2>Content & Scriptwriting for Viral Video Campaigns</h2>
+                
+                <h3>Dr. Pahlavan – Viral Comedy Series (Iran)</h3>
+                
+                <div class="meta-info">
+                    <p><strong>Role:</strong> Writer, Voice Actor</p>
+                </div>
+
+                <h3>Project Overview:</h3>
+                <p>
+                    Dr. Pahlavan is a viral comedy web series that became extremely popular in Iran, garnering millions of views. The story follows a hospital board member and a hospital guard from very different social backgrounds, blending humor and social commentary through their unlikely interactions.
+                </p>
+
+                <h3>Responsibilities & Achievements:</h3>
+                <ul>
+                    <li>Wrote all episodes, crafting engaging, emotional, and humorous scripts.</li>
+                    <li>Provided voice-over narration to bring the characters and story to life.</li>
+                    <li>Contributed to the series' viral success, reaching millions of viewers online.</li>
+                    <li>Collaborated closely with actors and production team to maintain consistent tone and pacing.</li>
+                </ul>
+
+                <h3>Skills Demonstrated:</h3>
+                <p>
+                    Scriptwriting, comedic storytelling, voice acting, social media content strategy, audience engagement.
+                </p>
+
+                <div class="image-gallery">
+                    <div class="gallery-item" onclick="openLightbox('dr-pahlavan-images/1.PNG', 'Dr. Pahlavan Series - Content Sample 1', 0)">
+                        <img src="dr-pahlavan-images/1.PNG" 
+                             alt="Dr. Pahlavan Series - Content Sample 1" 
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('dr-pahlavan-images/3.PNG', 'Dr. Pahlavan Series - Content Sample 2', 1)">
+                        <img src="dr-pahlavan-images/3.PNG" 
+                             alt="Dr. Pahlavan Series - Content Sample 2" 
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('dr-pahlavan-images/IMG_2483.PNG', 'Dr. Pahlavan Series - Content Sample 3', 2)">
+                        <img src="dr-pahlavan-images/IMG_2483.PNG" 
+                             alt="Dr. Pahlavan Series - Content Sample 3" 
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('dr-pahlavan-images/IMG_2485.PNG', 'Dr. Pahlavan Series - Content Sample 4', 3)">
+                        <img src="dr-pahlavan-images/IMG_2485.PNG" 
+                             alt="Dr. Pahlavan Series - Content Sample 4" 
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('dr-pahlavan-images/IMG_2486.PNG', 'Dr. Pahlavan Series - Content Sample 5', 4)">
+                        <img src="dr-pahlavan-images/IMG_2486.PNG" 
+                             alt="Dr. Pahlavan Series - Content Sample 5" 
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('dr-pahlavan-images/IMG_2487.PNG', 'Dr. Pahlavan Series - Content Sample 6', 5)">
+                        <img src="dr-pahlavan-images/IMG_2487.PNG" 
+                             alt="Dr. Pahlavan Series - Content Sample 6" 
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('dr-pahlavan-images/img.PNG', 'Dr. Pahlavan Series - Content Sample 7', 6)">
+                        <img src="dr-pahlavan-images/img.PNG" 
+                             alt="Dr. Pahlavan Series - Content Sample 7" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div id="balloon-section" class="content-section">
+                <button class="section-close" onclick="expandSection('balloon-section')">← Back to Cards</button>
+                <h2>Project: Balloon – Storytelling & Human Connection</h2>
+                
+                <div class="meta-info">
+                    <p><strong>Role:</strong> Interviewer & Content Creator</p>
+                </div>
+
+                <p>
+                    I initiated and led the Balloon project, interviewing 100+ individuals from diverse backgrounds to capture their unique experiences and perspectives—stories often overlooked by mainstream media. I designed and asked thoughtful, emotional questions that encouraged authentic storytelling, creating compelling content that resonates deeply with audiences.
+                </p>
+
+                <h3>This project showcases my skills in:</h3>
+                <ul>
+                    <li>Crafting engaging narratives</li>
+                    <li>Emotional intelligence in communication</li>
+                    <li>Generating original, human-focused content</li>
+                    <li>Connecting with audiences through authentic storytelling</li>
+                </ul>
+
+                <div class="image-gallery">
+                    <div class="gallery-item" onclick="openLightbox('balloon-project-images/47691850_152650675720878_8797767739323945819_n.jpg', 'Balloon Project - Interview 1', 7)">
+                        <img src="balloon-project-images/47691850_152650675720878_8797767739323945819_n.jpg" 
+                             alt="Balloon Project - Interview 1" 
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('balloon-project-images/47692073_221144952097085_3544531510261620018_n.jpeg', 'Balloon Project - Interview 2', 8)">
+                        <img src="balloon-project-images/47692073_221144952097085_3544531510261620018_n.jpeg" 
+                             alt="Balloon Project - Interview 2" 
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('balloon-project-images/49569956_1991846210905146_8715069175821224569_n.jpg', 'Balloon Project - Interview 3', 9)">
+                        <img src="balloon-project-images/49569956_1991846210905146_8715069175821224569_n.jpg" 
+                             alt="Balloon Project - Interview 3" 
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('balloon-project-images/49771832_2245316122407133_8447697529781700975_n.jpg', 'Balloon Project - Interview 4', 10)">
+                        <img src="balloon-project-images/49771832_2245316122407133_8447697529781700975_n.jpg" 
+                             alt="Balloon Project - Interview 4" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div id="irancell-section" class="content-section">
+                <button class="section-close" onclick="expandSection('irancell-section')">← Back to Cards</button>
+                <h2>Irancell Marketing Agency</h2>
+                
+                <div class="meta-info">
+                    <p><strong>Role:</strong> Email Designer, Copywriter & Visual Storyteller</p>
+                    <p><strong>Duration:</strong> Started with WordPress landing pages (3 months), then transitioned to Shopify and Klaviyo</p>
+                    <p><strong>Client Base:</strong> 100+ customers across near countries</p>
+                </div>
+
+                <p>
+                    I started at Irancell Marketing Agency as a landing page email designer and copywriter. For the first 3 months, I focused on creating WordPress landing pages, then transitioned to working with Shopify and Klaviyo. Irancell serves 100+ customers across its near countries, providing me with diverse experience in email marketing for various markets.
+                </p>
+
+                <h3>Visual Storytelling</h3>
+                <p>
+                    As a visual storyteller, I combine compelling copy with engaging visual design to create email campaigns that resonate with audiences and drive results.
+                </p>
+
+                <div style="margin: 40px 0; text-align: center;">
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                                src="https://www.youtube.com/embed/acpKLW0NQ7A?si=5FE6hvkWR3l2H87R" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div style="margin-top: 32px; text-align: center;">
+                    <a href="subject_lines_showcase.html" style="display: inline-block; padding: 12px 24px; background: #6366f1; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; transition: background 0.2s ease;">
+                        View Subject Lines Showcase →
+                    </a>
+                </div>
+            </div>
+
+            <div id="journey-section" class="content-section">
+                <button class="section-close" onclick="expandSection('journey-section')">← Back to Cards</button>
+                <h2>My Journey: Education & Professional Development</h2>
+                
+                <h3>How This Foundation Supports My Work</h3>
+                <ul>
+                    <li><strong>Cultural Understanding:</strong> My background in art and culture management provides deep insights into audience psychology and cultural trends, essential for effective email marketing.</li>
+                    <li><strong>Storytelling Skills:</strong> The 1000-hour storytelling certification enables me to craft compelling email narratives that engage and convert.</li>
+                    <li><strong>Technical Expertise:</strong> HTML/CSS/JavaScript knowledge allows me to create responsive, cross-client compatible email templates.</li>
+                    <li><strong>Research & Analysis:</strong> My thesis work demonstrates strong analytical skills, valuable for A/B testing and campaign optimization.</li>
+                    <li><strong>Academic Excellence:</strong> Achieving 19.5/20 on my thesis reflects my commitment to quality and attention to detail in all my work.</li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightboxOnBackdrop(event)">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <span class="lightbox-nav lightbox-prev" onclick="changeImage(-1, event)">&#8249;</span>
+        <span class="lightbox-nav lightbox-next" onclick="changeImage(1, event)">&#8250;</span>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+        </div>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        let allImages = [];
+
+        // Collect all gallery images on page load
+        function collectAllImages() {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            allImages = Array.from(galleryItems).map(item => {
+                const img = item.querySelector('img');
+                return {
+                    src: img.getAttribute('src'),
+                    alt: img.getAttribute('alt')
+                };
+            });
+        }
+
+        function openLightbox(imageSrc, imageAlt, index) {
+            if (allImages.length === 0) {
+                collectAllImages();
+            }
+            currentImageIndex = index;
+            const modal = document.getElementById('lightboxModal');
+            const modalImg = document.getElementById('lightboxImage');
+            
+            modalImg.src = imageSrc;
+            modalImg.alt = imageAlt;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function closeLightboxOnBackdrop(event) {
+            if (event.target.id === 'lightboxModal') {
+                closeLightbox();
+            }
+        }
+
+        function changeImage(direction, event) {
+            if (event) {
+                event.stopPropagation();
+            }
+            if (allImages.length === 0) {
+                collectAllImages();
+            }
+            currentImageIndex += direction;
+            
+            if (currentImageIndex < 0) {
+                currentImageIndex = allImages.length - 1;
+            } else if (currentImageIndex >= allImages.length) {
+                currentImageIndex = 0;
+            }
+            
+            const modalImg = document.getElementById('lightboxImage');
+            modalImg.src = allImages[currentImageIndex].src;
+            modalImg.alt = allImages[currentImageIndex].alt;
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            collectAllImages();
+        });
+
+        // Expand/Collapse Section Functionality
+        function expandSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (!section) return;
+
+            // Toggle the expanded class
+            section.classList.toggle('expanded');
+
+            // Scroll to section when expanded
+            if (section.classList.contains('expanded')) {
+                setTimeout(() => {
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+
+        // Close on Escape key, navigate with arrow keys
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('lightboxModal');
+            if (!modal.classList.contains('active')) return;
+            
+            if (event.key === 'Escape') {
+                closeLightbox();
+            } else if (event.key === 'ArrowLeft') {
+                changeImage(-1, { stopPropagation: () => {} });
+            } else if (event.key === 'ArrowRight') {
+                changeImage(1, { stopPropagation: () => {} });
+            }
+        });
+    </script>
+</body>
+</html>
+
