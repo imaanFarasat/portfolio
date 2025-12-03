@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Campaign Project - RezaGemCollection | Iman Farasat</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 60px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #666666;
+            margin-bottom: 40px;
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+
+        .summary-card {
+            background: #f5f5f5;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .summary-card.excellent {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+        }
+
+        .summary-card.good {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+        }
+
+        .summary-card.needs-improvement {
+            background: #fce4ec;
+            border-left: 4px solid #e91e63;
+        }
+
+        .summary-card h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .summary-card p {
+            font-size: 0.9rem;
+            color: #666666;
+            margin-bottom: 12px;
+        }
+
+        .summary-card .benchmark {
+            font-size: 0.85rem;
+            color: #999999;
+            font-style: italic;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e5e5;
+        }
+
+        .insight {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #1a1a1a;
+        }
+
+        .insight h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .insight p {
+            color: #666666;
+            margin-bottom: 8px;
+        }
+
+        .insight ul {
+            margin-left: 20px;
+            color: #666666;
+        }
+
+        .insight li {
+            margin-bottom: 6px;
+        }
+
+        .recommendations {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #2196f3;
+        }
+
+        .recommendations h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .recommendations ul {
+            margin-left: 20px;
+        }
+
+        .recommendations li {
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .performance-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .performance-table th {
+            background: #f5f5f5;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #1a1a1a;
+            border-bottom: 2px solid #e5e5e5;
+        }
+
+        .performance-table td {
+            padding: 12px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.9rem;
+            color: #666666;
+        }
+
+        .performance-table tr:hover {
+            background: #fafafa;
+        }
+
+        .metric-excellent {
+            color: #4caf50;
+            font-weight: 600;
+        }
+
+        .metric-good {
+            color: #ff9800;
+            font-weight: 600;
+        }
+
+        .metric-low {
+            color: #e91e63;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .summary-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .performance-table {
+                font-size: 0.8rem;
+            }
+
+            .performance-table th,
+            .performance-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Branding Header -->
+    <div style="background-color: #1a1a1a; padding: 10px 0; text-align: center; position: sticky; top: 0; z-index: 2000;">
+        <div style="font-size: 18px; font-weight: 600; color: #ffffff; letter-spacing: 1px; margin-bottom: 2px;">IMAN FARASAT</div>
+        <div style="font-size: 11px; color: #cccccc; letter-spacing: 0.5px;">Email Marketing Portfolio</div>
+    </div>
+    <!-- Navigation Bar -->
+    <div style="background-color: #1a1a1a; padding: 15px 0; text-align: center; position: sticky; top: 0; z-index: 1000;">
+        <a href="email_portfolio.html" style="display: inline-block; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; padding: 8px 20px; border: 1px solid #ffffff; border-radius: 4px; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">← Back to Portfolio</a>
+    </div>
+    <div class="container">
+        <h1>Email Campaign Performance Analysis</h1>
+        <p class="subtitle">Project: RezaGemCollection.ca | September 1-15, 2025</p>
+
+        <div class="summary-cards">
+            <div class="summary-card excellent">
+                <h3>36.5%</h3>
+                <p><strong>Average Open Rate</strong></p>
+                <p class="benchmark">Industry Average: 20-25%</p>
+            </div>
+
+            <div class="summary-card good">
+                <h3>2.1%</h3>
+                <p><strong>Average Click Rate</strong></p>
+                <p class="benchmark">Industry Average: 2-5%</p>
+            </div>
+
+            <div class="summary-card good">
+                <h3>3.2%</h3>
+                <p><strong>Average Conversion Rate</strong></p>
+                <p class="benchmark">Industry Average: 2-5%</p>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Performance Overview</h2>
+            
+            <div class="insight">
+                <h4>✅ What's Working Well</h4>
+                <ul>
+                    <li><strong>Excellent Open Rates:</strong> Your average of 36.5% is significantly above the industry average of 20-25%. This indicates strong subject lines and good list quality.</li>
+                    <li><strong>Consistent Performance:</strong> Most campaigns are performing in the 34-41% open rate range, showing consistency in your email strategy.</li>
+                    <li><strong>Strong Subject Lines:</strong> The use of emojis (✨, 🔥, 💎) and urgency language is resonating with your audience.</li>
+                    <li><strong>Good Conversion Rates:</strong> When conversions are tracked, you're seeing 2-5.56%, which is at or above industry standards.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Top Performing Campaigns</h2>
+            
+            <table class="performance-table">
+                <thead>
+                    <tr>
+                        <th>Campaign</th>
+                        <th>Open Rate</th>
+                        <th>Click Rate</th>
+                        <th>Conversion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🔥 EXTREMELY RARE STAR ROSE QUARTZ BEADS 🔥</td>
+                        <td class="metric-excellent">37.97%</td>
+                        <td class="metric-excellent">3.17%</td>
+                        <td class="metric-excellent">2.13%</td>
+                    </tr>
+                    <tr>
+                        <td>Special Offer on Natural Shells – Mother of Pearl Exclusive Collection</td>
+                        <td class="metric-excellent">41.4%</td>
+                        <td class="metric-excellent">3.12%</td>
+                        <td class="metric-excellent">2.63%</td>
+                    </tr>
+                    <tr>
+                        <td>🎉 Welcome to RezaGemCollection - Your Discount Code Inside!</td>
+                        <td class="metric-excellent">39.69%</td>
+                        <td>1.76%</td>
+                        <td class="metric-excellent">4%</td>
+                    </tr>
+                    <tr>
+                        <td>Special Offer on Unique Amethyst Varieties</td>
+                        <td class="metric-excellent">41.44%</td>
+                        <td class="metric-good">2.65%</td>
+                        <td class="metric-good">2%</td>
+                    </tr>
+                    <tr>
+                        <td>Special Offer on Rare Gemstone – Shattuckite Limited Collection</td>
+                        <td class="metric-excellent">40.56%</td>
+                        <td class="metric-excellent">3.72%</td>
+                        <td>1.61%</td>
+                    </tr>
+                    <tr>
+                        <td>✨Special Offer on Clear Quartz Crystal Beads✨</td>
+                        <td class="metric-excellent">37.32%</td>
+                        <td>1.64%</td>
+                        <td class="metric-excellent">5.26%</td>
+                    </tr>
+                    <tr>
+                        <td>🎁 Insane Black Friday Deal: All Bracelets 50% OFF!💥</td>
+                        <td>26.99%</td>
+                        <td>2.35%</td>
+                        <td class="metric-good">3.03%</td>
+                    </tr>
+                    <tr>
+                        <td>🔥 Sunstone Moonstone Gemstone Beads 🔥</td>
+                        <td class="metric-excellent">35.71%</td>
+                        <td>1.28%</td>
+                        <td class="metric-excellent">5.56%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="section">
+            <h2 class="section-title">Project Summary</h2>
+            
+            <div class="insight">
+                <h4>🎯 Performance Results</h4>
+                <p><strong>Project Duration:</strong> September 1-15, 2025</p>
+                <p><strong>Client:</strong> RezaGemCollection.ca</p>
+                <p><strong>Key Achievements:</strong> Delivered exceptional open rates (36.5% average, 46% above industry standard), maintained strong click-through rates at industry standards, and achieved consistent conversion rates across multiple campaigns. Successfully executed product launch emails, promotional campaigns, and welcome sequences with high engagement rates.</p>
+                <p><strong>Campaign Highlights:</strong> Managed 20+ email campaigns during this period, with top performers achieving 41%+ open rates and 3%+ click rates. Successfully launched new product collections and promotional offers with strong customer response.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

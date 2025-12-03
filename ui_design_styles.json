@@ -1,0 +1,260 @@
+{
+  "ui_design_styles": [
+    {
+      "id": 1,
+      "name": "Material Design",
+      "description": "Google's design language that uses grid-based layouts, responsive animations, transitions, padding, and depth effects such as lighting and shadows.",
+      "key_characteristics": [
+        "Elevation and shadows",
+        "Bold colors",
+        "Typography hierarchy",
+        "Motion and animation",
+        "Grid-based layouts"
+      ],
+      "use_cases": [
+        "Android applications",
+        "Web applications",
+        "Enterprise software"
+      ],
+      "popularity": "Very High",
+      "used_in": [
+        {
+          "project": "Post-Purchase Upsell Email",
+          "file": "post_purchase_upsell_email.html",
+          "date": "2024",
+          "description": "Post-purchase upsell email using Material Design with elevation and shadows, bold blue accent colors (#1976d2), typography hierarchy, grid-based product layout, and depth effects for product cards"
+        },
+        {
+          "project": "Subject Lines & Preheaders Showcase",
+          "file": "subject_lines_preheaders.html",
+          "date": "2024",
+          "description": "Subject lines and preheaders examples page using Material Design with elevation and shadows, bold blue accent colors (#1976d2), typography hierarchy, grid-based layout, Arial font family, and depth effects for cards"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Flat Design",
+      "description": "A minimalist design approach that emphasizes usability and features clean, open space, crisp edges, bright colors, and two-dimensional illustrations.",
+      "key_characteristics": [
+        "No shadows or gradients",
+        "Simple typography",
+        "Bold colors",
+        "Minimal elements",
+        "Clean interfaces"
+      ],
+      "use_cases": [
+        "Modern web applications",
+        "Mobile apps",
+        "Dashboard interfaces"
+      ],
+      "popularity": "High",
+      "used_in": [
+        {
+          "project": "New Product Launch Email",
+          "file": "new_product_launch_email.html",
+          "date": "2024",
+          "description": "Product launch email for gemstone collection using flat design with clean borders, bold colors, and minimal elements"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Glassmorphism",
+      "description": "A modern UI trend featuring translucent, frosted glass-like elements with subtle borders and background blur effects.",
+      "key_characteristics": [
+        "Transparency",
+        "Backdrop blur",
+        "Light borders",
+        "Multi-layered approach",
+        "Vibrant colors"
+      ],
+      "use_cases": [
+        "Modern web applications",
+        "iOS applications",
+        "Dashboard cards"
+      ],
+      "popularity": "High",
+      "used_in": [
+        {
+          "project": "Customer Reactivation Email",
+          "file": "customer_reactivation_email.html",
+          "date": "2024",
+          "description": "Customer reactivation email using glassmorphism with translucent backgrounds, light borders, and multi-layered glass effects"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Neumorphism",
+      "description": "A soft UI design style that creates a sense of depth through subtle shadows and highlights, making elements appear extruded from the background.",
+      "key_characteristics": [
+        "Soft shadows",
+        "Subtle highlights",
+        "Low contrast",
+        "Monochrome color schemes",
+        "Embossed appearance"
+      ],
+      "use_cases": [
+        "Modern mobile apps",
+        "Dashboard interfaces",
+        "Minimalist designs"
+      ],
+      "popularity": "Medium-High",
+      "used_in": [
+        {
+          "project": "Abandoned Cart Email",
+          "file": "abandoned_cart_email.html",
+          "date": "2024",
+          "description": "Abandoned cart email using neumorphism design with soft shadows, subtle highlights, low contrast gray color scheme, and embossed appearance for product cards and buttons"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Skeuomorphic Design",
+      "description": "A design approach that mimics real-world objects and textures, making digital interfaces resemble their physical counterparts.",
+      "key_characteristics": [
+        "Realistic textures",
+        "3D effects",
+        "Detailed shadows",
+        "Photorealistic elements",
+        "Familiar metaphors"
+      ],
+      "use_cases": [
+        "Early iOS designs",
+        "Gaming interfaces",
+        "Educational applications"
+      ],
+      "popularity": "Medium",
+      "used_in": [
+        {
+          "project": "Informative Email - End Tables Collection",
+          "file": "informative_email.html",
+          "date": "2024",
+          "description": "Informative email showcasing premium end tables collection using skeuomorphic design with realistic textures, 3D effects, detailed shadows, gradient backgrounds, and embossed button styles to create depth and dimension"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Brutalism",
+      "description": "A bold, raw design style characterized by stark contrasts, bold typography, and an unpolished, raw aesthetic that prioritizes function over form.",
+      "key_characteristics": [
+        "Bold typography",
+        "High contrast",
+        "Raw, unpolished look",
+        "Asymmetric layouts",
+        "Monochrome or limited color palette"
+      ],
+      "use_cases": [
+        "Portfolio websites",
+        "Creative agencies",
+        "Artistic projects"
+      ],
+      "popularity": "Medium"
+    },
+    {
+      "id": 7,
+      "name": "Minimalism",
+      "description": "A design philosophy that focuses on simplicity, using only essential elements and removing unnecessary decorations to create clean, focused interfaces.",
+      "key_characteristics": [
+        "White space",
+        "Simple typography",
+        "Limited color palette",
+        "Essential elements only",
+        "Clean layouts"
+      ],
+      "use_cases": [
+        "Portfolio websites",
+        "Luxury brands",
+        "Content-focused sites"
+      ],
+      "popularity": "Very High",
+      "used_in": [
+        {
+          "project": "Welcome Email",
+          "file": "welcome_email.html",
+          "date": "2024",
+          "description": "Welcome email with discount code using minimalism design with clean white space, simple typography, limited black and white color palette, and essential elements only"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Dark Mode UI",
+      "description": "A design style featuring dark color schemes that reduce eye strain in low-light conditions and conserve battery on OLED displays.",
+      "key_characteristics": [
+        "Dark backgrounds",
+        "Light text",
+        "Accent colors",
+        "Reduced brightness",
+        "High contrast ratios"
+      ],
+      "use_cases": [
+        "All modern applications",
+        "Developer tools",
+        "Media consumption apps"
+      ],
+      "popularity": "Very High"
+    },
+    {
+      "id": 9,
+      "name": "Card-Based Design",
+      "description": "A layout approach that organizes content into distinct card containers, making information digestible and scannable.",
+      "key_characteristics": [
+        "Contained content blocks",
+        "Visual separation",
+        "Consistent spacing",
+        "Hover effects",
+        "Grid layouts"
+      ],
+      "use_cases": [
+        "Social media platforms",
+        "E-commerce sites",
+        "Content management systems"
+      ],
+      "popularity": "Very High",
+      "used_in": [
+        {
+          "project": "Black Friday Email Template",
+          "file": "black_friday_email.html",
+          "date": "2024",
+          "description": "Responsive email template for men's shoes Black Friday sale using card-based product layout"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Gradient Design",
+      "description": "A vibrant design style that uses color gradients to create depth, visual interest, and modern aesthetics with smooth color transitions.",
+      "key_characteristics": [
+        "Color transitions",
+        "Vibrant palettes",
+        "Depth and dimension",
+        "Modern aesthetics",
+        "Eye-catching visuals"
+      ],
+      "use_cases": [
+        "Modern web applications",
+        "Marketing websites",
+        "Mobile apps"
+      ],
+      "popularity": "High",
+      "used_in": [
+        {
+          "project": "Black Friday Email Template",
+          "file": "black_friday_email.html",
+          "date": "2024",
+          "description": "Used gradient backgrounds in header banner and CTA button for vibrant Black Friday theme"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "total_styles": 10,
+    "last_updated": "2024",
+    "description": "A comprehensive list of 10 most important UI design styles used in modern digital interfaces"
+  }
+}
+
